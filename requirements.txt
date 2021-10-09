@@ -1,0 +1,16 @@
+decorator
+Flask
+gunicorn
+Jinja2
+MarkupSafe
+migrate
+pbr
+Pillow
+six
+Werkzeug
+wheel
+gspread
+pytz
+Flask-PyMongo
+pymongo
+dnspython
