@@ -9,8 +9,5 @@ Pillow
 six
 Werkzeug
 wheel
-gspread
 pytz
-Flask-PyMongo
-pymongo
 dnspython
