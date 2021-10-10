@@ -3,15 +3,13 @@
   width: 100%;
 }
 #body-elements {
-  font-size: 0px;
+  display: flex;
 }
 #tool-bar {
-  display: inline-block;
-  height: 100px;
+  height: 750px;
   width: 300px;
 }
 #east-coast-map {
-  display: inline-block;
 }
 #overlay-grid {
   position: absolute;
