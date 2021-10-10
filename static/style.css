@@ -1,7 +1,18 @@
-body {
-  height: 100%;
-  width: 100%;
+#tool-bar {
+  display: inline-block;
+  height: 100px;
+  width: 300px;
+  margin: 0px;
 }
 #east-coast-map {
-  height: 100%;
+  display: inline-block;
+  margin: 0px;
+
+}
+#overlay-grid {
+  position: absolute;
+  height: 750px;
+  width: 1000px;
+  left: 300px;
+  top: 0px;
 }
