@@ -2,21 +2,21 @@
   height: 100px;
   width: 100%;
 }
+#body-elements {
+  font-size: 0px;
+}
 #tool-bar {
   display: inline-block;
   height: 100px;
   width: 300px;
-  margin: 0px;
 }
 #east-coast-map {
   display: inline-block;
-  margin: 0px;
-
 }
 #overlay-grid {
   position: absolute;
   height: 750px;
   width: 1000px;
   left: 300px;
-  top: 0px;
+  top: 100px;
 }
