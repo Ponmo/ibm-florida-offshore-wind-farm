@@ -10,7 +10,10 @@
   width: 300px;
 }
 #east-coast-map {
+  position: absolute;
   width: 1000px;
+  min-width: 1000px;
+  left: 300px;
 }
 #overlay-grid {
   position: absolute;
