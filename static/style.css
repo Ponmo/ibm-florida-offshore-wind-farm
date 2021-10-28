@@ -11,14 +11,14 @@
 }
 #florida-map {
   position: absolute;
-  width: 1000px;
-  min-width: 1000px;
+  width: 1200px;
+  min-width: 1200px;
   left: 300px;
 }
 #overlay-grid {
   position: absolute;
   height: 750px;
-  width: 1000px;
+  width: 1200px;
   left: 300px;
   top: 100px;
 }
