@@ -22,3 +22,10 @@
   left: 300px;
   top: 100px;
 }
+td {
+ text-align: left;
+ vertical-align: top;
+ color: grey;
+ width: 50px;
+ border: 1px solid grey;
+}
