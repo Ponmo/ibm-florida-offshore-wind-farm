@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 #heading-bar {
   height: 100px;
   width: 100%;
