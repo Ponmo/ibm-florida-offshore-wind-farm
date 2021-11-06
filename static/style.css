@@ -11,8 +11,8 @@
 }
 #florida-map {
   position: absolute;
-  width: 1200px;
-  min-width: 1200px;
+  float: none;
+  overflow: hidden;
   left: 300px;
 }
 #overlay-grid {
@@ -28,4 +28,10 @@ td {
  color: grey;
  width: 50px;
  border: 1px solid grey;
+}
+@media only screen and (max-width: 1500px) {
+  #florida-map {
+    width: 1200px;
+    min-width: 1200px;
+  }
 }
