@@ -9,29 +9,29 @@
 }
 #tool-bar {
   min-height: 750px;
-  height: -webkit-calc((100vw - 300px)/1.6);
-  height:    -moz-calc((100vw - 300px)/1.6);
-  height:         calc((100vw - 300px)/1.6);
+  height: -webkit-calc((100vw - 315px)/1.6);
+  height:    -moz-calc((100vw - 315px)/1.6);
+  height:         calc((100vw - 315px)/1.6);
   width: 300px;
 }
 #florida-map {
   position: absolute;
   min-width: 1200px;
-  width: -webkit-calc(100vw - 300px);
-  width:    -moz-calc(100vw - 300px);
-  width:         calc(100vw - 300px);
+  width: -webkit-calc(100vw - 315px);
+  width:    -moz-calc(100vw - 315px);
+  width:         calc(100vw - 315px);
   left: 300px;
 }
 #overlay-grid {
   position: absolute;
   min-width: 1200px;
-  width: -webkit-calc(100vw - 300px);
-  width:    -moz-calc(100vw - 300px);
-  width:         calc(100vw - 300px);
+  width: -webkit-calc(100vw - 315px);
+  width:    -moz-calc(100vw - 315px);
+  width:         calc(100vw - 315px);
   min-height: 750px;
-  height: -webkit-calc((100vw - 300px)/1.6);
-  height:    -moz-calc((100vw - 300px)/1.6);
-  height:         calc((100vw - 300px)/1.6);
+  height: -webkit-calc((100vw - 315px)/1.6);
+  height:    -moz-calc((100vw - 315px)/1.6);
+  height:         calc((100vw - 315px)/1.6);
   left: 300px;
   top: 100px;
 }
