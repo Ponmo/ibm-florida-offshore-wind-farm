@@ -61,9 +61,9 @@
 #tool-bar-header-title {
 }
 #tool-bar-turbine {
-}
-#tool-bar-limits {
-
+  position: absolute;
+  width: 300px;
+  top: 320px;
 }
 #tool-bar-power-calculation {
 
