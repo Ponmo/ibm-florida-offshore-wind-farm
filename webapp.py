@@ -32,14 +32,14 @@ def render_main():
         grid_code += ('<button style="background-color:rgba(255,' + str(green) + ', 0, 0.75);" class="square-button" data-html="true" data-placement="auto right" title="' +
                       data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
                       str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
-                      str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
+                      str(data[point]['200wind']) + '<br>Depth (m): ' + str(data[point]['depth']) +
                       '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
         grid_code_basic += ('<button class="square-button" data-html="true" data-placement="auto right" title="' +
                             data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
                             str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
-                            str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
+                            str(data[point]['200wind']) + '<br>Depth (m): ' + str(data[point]['depth']) +
                             '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
-      grid_code += 'a</td>'
+      grid_code += '</td>'
       grid_code_basic += '</td>'
       square += 1
     grid_code += '</tr>'
