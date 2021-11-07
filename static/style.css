@@ -35,6 +35,16 @@
   outline: none;
   float: right;
 }
+.square-button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
 #tool-bar {
   min-height: 750px;
   height: -webkit-calc((100vw - 315px)/1.6);
