@@ -78,7 +78,7 @@
   width:         calc(100vw - 315px);
   left: 300px;
 }
-#overlay-grid {
+.overlay-grid {
   position: absolute;
   min-width: 1200px;
   width: -webkit-calc(100vw - 315px);
