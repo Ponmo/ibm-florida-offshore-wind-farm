@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/') 
 def render_main():
-  with open('windturbines.json') as d:
+  with open('windturbine.json') as d:
         data = json.load(d)
   return render_template('main.html')
 
