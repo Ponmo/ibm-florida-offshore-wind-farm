@@ -13,8 +13,14 @@ app = Flask(__name__)
 
 @app.route('/') 
 def render_main():
+  grid = []
   with open('windturbine.json') as d:
         data = json.load(d)
+      
+  #for row in grid:
+  #  for square in row:
+      
+      
   return render_template('main.html')
 
 if __name__ == "__main__":
