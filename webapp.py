@@ -3,6 +3,7 @@ from flask import render_template
 
 import pprint
 import os
+import json
 import sys
 from datetime import datetime, date, timedelta
 from pytz import timezone
@@ -11,7 +12,9 @@ import pytz
 app = Flask(__name__)
 
 @app.route('/') 
-def render_maps():
+def render_main():
+  with open('windturbines.json') as d:
+        data = json.load(d)
   return render_template('main.html')
 
 if __name__ == "__main__":
