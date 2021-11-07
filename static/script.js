@@ -2,6 +2,7 @@ $(document).ready(function(){
   $("#marine-conservation-map").hide();
   $("#bathymetry-map").hide();
   $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
   $("#basic-button").click(function() {
     $("#basic-map").show();
     $("#bathymetry-map").hide();
