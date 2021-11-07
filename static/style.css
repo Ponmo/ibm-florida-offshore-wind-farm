@@ -1,6 +1,7 @@
 #heading-bar {
   height: 100px;
   width: 100%;
+  border-bottom: 1px solid black;
 }
 #body-elements {
   display: flex;
@@ -13,14 +14,19 @@
   height:    -moz-calc((100vw - 315px)/1.6);
   height:         calc((100vw - 315px)/1.6);
   width: 300px;
+  border-right: 1px solid black;
 }
 #tool-bar-header {
+  border-bottom: 1px solid black;
+  height: 25px;
+  text-align: center;
 }
 #tool-bar-header-title {
 }
 #tool-bar-turbine {
 }
 #tool-bar-limits {
+
 }
 #tool-bar-power-calculation {
 
