@@ -32,7 +32,7 @@ def render_main():
                       str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
                       '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
       else:
-        grid_code += '<button style="background-color:rgba(100, 100, 100, 0.5);" class="square-button"></button>'
+        grid_code += '<button style="background-color:rgba(200, 200, 200, 0.5);" class="square-button"></button>'
       grid_code += '</td>'
       square += 1
     grid_code += '</tr>'
