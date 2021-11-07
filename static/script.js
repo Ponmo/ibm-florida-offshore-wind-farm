@@ -10,7 +10,7 @@ $(document).ready(function(){
     $("#basic-button").addClass("active");
     $("#bathymetry-button").removeClass("active");
     $("#marine-conservation-button").removeClass("active");
-    $("p").css("background-color", "yellow");
+    $(".square-button").css("background-color", "yellow");
   });
   $("#bathymetry-button").click(function() {
     $("#basic-map").hide();
