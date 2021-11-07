@@ -23,11 +23,12 @@ def render_main():
     grid_code += '<tr>'
     while square < 24:
       grid_code += '<td>'
-      if chr(row + 65) + str(square + 1) in data:
+      point = chr(row + 65) + str(square + 1)
+      if point in data:
         grid_code += ('<button class="square-button" data-placement="auto right" title="' +
-                      data['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
-                      str(data['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
-                      str(data['200wind']) + '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
+                      data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
+                      str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
+                      str(data[point]['200wind']) + '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
       grid_code += '</td>'
       square += 1
     grid_code += '</tr>'
