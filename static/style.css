@@ -3,7 +3,17 @@
   width: 100%;
   border-bottom: 1px solid black;
 }
+#navbar {
+  font-family: "Verdana", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;  
+  position: absolute;
+  right: 100px;
+  top: 63px;
+}
 #title {
+  font-family: "Verdana", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 24px;
   padding-top: 30px;
   padding-left: 30px;
