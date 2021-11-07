@@ -24,6 +24,7 @@ def render_main():
     while square < 24:
       grid_code += '<td>'
       if chr(row + 65) + str(square + 1) in data:
+        
         grid_code += '1'
       grid_code += '</td>'
       square += 1
