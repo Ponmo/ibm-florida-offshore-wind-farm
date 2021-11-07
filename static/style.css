@@ -3,6 +3,11 @@
   width: 100%;
   border-bottom: 1px solid black;
 }
+#title {
+  font-size: 24px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
 #body-elements {
   display: flex;
   width: 100%;
@@ -28,13 +33,12 @@
 #tool-bar-limits {
 
 }
-.glyphicon {
-  float: right;
-}
 #tool-bar-power-calculation {
 
 }
-
+.glyphicon {
+  float: right;
+}
 #florida-map {
   position: absolute;
   min-width: 1200px;
@@ -64,4 +68,5 @@ td {
  height: 6.66666%;
  border: 1px solid grey;
 }
+
 
