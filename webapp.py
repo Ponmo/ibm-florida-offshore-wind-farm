@@ -15,7 +15,7 @@ app = Flask(__name__)
 def render_main():
   grid = []
   with open('windturbine.json') as d:
-        data = json.load(d)
+    data = json.load(d)
   grid_code = ''
   row = 0    
   square = 0
@@ -26,6 +26,7 @@ def render_main():
       if chr(row + 65) + str(square + 1) in data:
         grid_code += '1'
       grid_code += '</td>'
+      square += 1
     grid_code += '</tr>'
     square = 0
     row += 1
