@@ -25,8 +25,8 @@ def render_main():
       grid_code += '<td>'
       point = chr(row + 65) + str(square + 1)
       if point in data:
-        green = 1 / float(data[point]['200wind']) * 1650
-        grid_code += ('<button style="background-color:rgba(255, green, 0, 0.3);" class="square-button" data-html="true" data-placement="auto right" title="' +
+        green = str(1 / float(data[point]['200wind']) * 1650)
+        grid_code += ('<button style="background-color:rgba(255,' + green + ', 0, 0.3);" class="square-button" data-html="true" data-placement="auto right" title="' +
                       data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
                       str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
                       str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
