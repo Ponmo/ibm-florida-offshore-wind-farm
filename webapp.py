@@ -27,8 +27,9 @@ def render_main():
       if point in data:
         grid_code += ('<button class="square-button" data-html="true" data-placement="auto right" title="' +
                       data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
-                      str(data[point]['100wind']) + '<br> Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br> Wind Speed 200m (m/s): ' + 
-                      str(data[point]['200wind']) + '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
+                      str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
+                      str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
+                      '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
       grid_code += '</td>'
       square += 1
     grid_code += '</tr>'
