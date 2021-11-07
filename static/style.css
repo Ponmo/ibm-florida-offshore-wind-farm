@@ -48,7 +48,7 @@
 .glyphicon {
   float: right;
 }
-#florida-map {
+.florida-map {
   position: absolute;
   min-width: 1200px;
   width: -webkit-calc(100vw - 315px);
