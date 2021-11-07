@@ -10,6 +10,8 @@ $(document).ready(function(){
     $("#basic-button").addClass("active");
     $("#bathymetry-button").removeClass("active");
     $("#marine-conservation-button").removeClass("active");
+    $("#wind-grid").show();
+    $("#basic-grid").hide();
   });
   $("#bathymetry-button").click(function() {
     $("#basic-map").hide();
@@ -18,6 +20,8 @@ $(document).ready(function(){
     $("#basic-button").removeClass("active");
     $("#bathymetry-button").addClass("active");
     $("#marine-conservation-button").removeClass("active");
+    $("#wind-grid").hide();
+    $("#basic-grid").show();
   });
   $("#marine-conservation-button").click(function() {
     $("#basic-map").hide();
@@ -26,5 +30,7 @@ $(document).ready(function(){
     $("#basic-button").removeClass("active");
     $("#bathymetry-button").removeClass("active");
     $("#marine-conservation-button").addClass("active");
+    $("#wind-grid").hide();
+    $("#basic-grid").show();
   });
 });
