@@ -24,13 +24,16 @@ def render_main():
     while square < 24:
       grid_code += '<td>'
       if chr(row + 65) + str(square + 1) in data:
-        grid_code += '<button class="square-button" data-toggle="tooltip" data-placement="auto right" title="Basic Information!"></button>'
+        grid_code += ('<button class="square-button" data-placement="auto right" title="' +
+                      data['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
+                      str(data['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
+                      str(data['200wind']) + '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
       grid_code += '</td>'
       square += 1
     grid_code += '</tr>'
     square = 0
     row += 1
-  return render_template('main.html')
+  return render_template('main.html', test = Markup(grid_code))
 
 if __name__ == "__main__":
     app.run()
