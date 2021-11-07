@@ -16,12 +16,19 @@ def render_main():
   grid = []
   with open('windturbine.json') as d:
         data = json.load(d)
-      
-  for row in grid:
-    for square in row:
-      print("hi")
-      
-      
+  grid_code = ''
+  row = 0    
+  square = 0
+  while row < 15:
+    grid_code += '<tr>'
+    while square < 24:
+      grid_code += '<td>'
+      if chr(row + 65) + str(square + 1) in data:
+        grid_code += '1'
+      grid_code += '</td>'
+    grid_code += '</tr>'
+    square = 0
+    row += 1
   return render_template('main.html')
 
 if __name__ == "__main__":
