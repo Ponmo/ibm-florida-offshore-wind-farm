@@ -39,7 +39,7 @@ def render_main():
                             str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
                             str(data[point]['200wind']) + '<br>Depth: ' + str(data[point]['depth']) +
                             '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
-      grid_code += '</td>'
+      grid_code += 'a</td>'
       grid_code_basic += '</td>'
       square += 1
     grid_code += '</tr>'
