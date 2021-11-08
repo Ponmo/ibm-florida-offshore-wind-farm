@@ -37,7 +37,6 @@
 }
 .square-button {
   display: inline-flex;
-  align-items: flex-start;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -95,8 +94,7 @@
   top: 100px;
 }
 td {
- text-align: left;
- vertical-align: top;
+ display: inline-flex;
  color: grey;
  width: 4.166666%;
  height: 6.66666%;
