@@ -36,6 +36,9 @@
   float: right;
 }
 #info-button-turbine {
+  position: absolute;
+  top: 269px;
+  left: 259px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -76,8 +79,9 @@
 }
 #turbine-header {
   border-top: 1px solid black;
-  height: 35px;
+  height: 35px
 }
+
 #tool-bar-turbine {
   position: absolute;
   width: 300px;
@@ -153,5 +157,5 @@ td {
  border: 1px solid gray;
 }
 strong {
-  color: #484848!important;
+  color: dimgray!important;
 }
