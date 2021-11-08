@@ -40,8 +40,15 @@ def render_main():
                             str(data[point]['200wind']) + '<br>Depth (m): ' + str(data[point]['depth']) +
                             '" data-toggle="popover" data-trigger="focus" data-content="popover"></button></td>')
       else:
-        grid_code += 'a</td>'
-        grid_code_basic += 'a</td>'
+        value = ''
+        if row == 0 and square == 0:
+          value = 'A1'
+        elif row == 0:
+          value = str(square + 1)
+        elif square == 0:
+          value = chr(row + 65)
+        grid_code += value + '</td>'
+        grid_code_basic += value + '</td>'
       #grid_code += '</td>'
       #grid_code_basic += '</td>'
       square += 1
