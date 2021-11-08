@@ -34,7 +34,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#basic-grid").show();
   });
-  $(".square-button > button").click(function() {
+  $(".square-button").click(function() {
     alert(this.innerHTML);
   });
 });
