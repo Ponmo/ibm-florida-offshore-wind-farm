@@ -100,7 +100,8 @@
 }
 #equation {
   position: absolute;
-  
+  top: 530px;
+  left: 90px;
 }
 .glyphicon {
   float: right;
