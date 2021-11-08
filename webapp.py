@@ -24,8 +24,8 @@ def render_main():
     grid_code += '<tr>'
     grid_code_basic += '<tr>'
     while square < 24:
-      grid_code += '<td class="table-data">'
-      grid_code_basic += '<td class="table-data">'
+      grid_code += '<td>'
+      grid_code_basic += '<td>'
       point = chr(row + 65) + str(square + 1)
       if point in data:
         green = (((1 / float((data[point]['200wind'] + data[point]['150wind'] + data[point]['100wind'])/3) - 0.125) * 165) / (0.1667 - 0.125))
