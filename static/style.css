@@ -65,9 +65,42 @@
   position: absolute;
   width: 300px;
   top: 320px;
+  left: -10px;
 }
 #tool-bar-power-calculation {
 
+}
+#radius {
+  position: absolute;
+  top: 320px;
+  width: 80px;
+  left: 30px;
+  font-size: 12px;
+}
+#air-density {
+  position: absolute;
+  top: 430px;
+  width: 80px;
+  font-size: 12px;
+  left: 30px;
+}
+
+#power-coefficient {
+  position: absolute;
+  font-size: 12px;
+  top: 305px;
+  width: 80px;
+  left: 190px;
+}
+#hub-height {
+  position: absolute;
+  font-size: 12px;
+  top: 430px;
+  left: 205px;
+}
+#equation {
+  position: absolute;
+  
 }
 .glyphicon {
   float: right;
