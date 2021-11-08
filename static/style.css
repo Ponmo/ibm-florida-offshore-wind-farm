@@ -36,9 +36,8 @@
   float: right;
 }
 .square-button {
-  text-align: left;
-  vertical-align: text-top;
-  padding: 0px;
+  display: inline-flex;
+  align-items: flex-start;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
