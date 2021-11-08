@@ -33,7 +33,7 @@ def render_main():
                       data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
                       str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
                       str(data[point]['200wind']) + '<br>Depth (m): ' + str(data[point]['depth']) +
-                      '" data-toggle="popover" data-trigger="focus" data-content="popover"></button>')
+                      '" data-toggle="popover" data-trigger="focus" data-content="popover">a</button>')
         grid_code_basic += ('<button class="square-button" data-html="true" data-placement="auto right" title="' +
                             data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="Wind Speed 100m (m/s): ' +
                             str(data[point]['100wind']) + '<br>Wind Speed 150m (m/s): ' + str(data[point]['150wind']) + '<br>Wind Speed 200m (m/s): ' + 
