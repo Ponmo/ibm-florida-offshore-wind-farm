@@ -92,7 +92,7 @@
   left: 300px;
   top: 100px;
 }
-#table-data {
+td {
  text-align: left;
  vertical-align: top;
  color: grey;
