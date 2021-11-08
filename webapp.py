@@ -36,8 +36,8 @@ def render_main():
         elif square == 0:
           value = chr(row + 65)
         green = (((1 / float((data[point]['200wind'] + data[point]['150wind'] + data[point]['100wind'])/3) - 0.125) * 165) / (0.1667 - 0.125))
-        grid_code += ('<button style="background-color:rgba(255,' + str(green) + ', 0, 0.75);" class="square-button" data-html="true" data-placement="auto right" title="' +
-                      data[point]['coordinates'] + '" data-toggle="popover" data-trigger="focus" data-content="<b>Wind Speed 100m (m/s):</b> ' +
+        grid_code += ('<button style="background-color:rgba(255,' + str(green) + ', 0, 0.75);" class="square-button" data-html="true" data-placement="auto right" title="<b>' +
+                      data[point]['coordinates'] + '</b>" data-toggle="popover" data-trigger="focus" data-content="<b>Wind Speed 100m (m/s):</b> ' +
                       str(data[point]['100wind']) + '<br><b>Wind Speed 150m (m/s):</b> ' + str(data[point]['150wind']) + '<br><b>Wind Speed 200m (m/s):</b> ' + 
                       str(data[point]['200wind']) + '<br><b>Depth (m):</b> ' + str(data[point]['depth']) +
                       '" data-toggle="popover" data-trigger="focus" data-content="popover">' + value + '</button></td>')
