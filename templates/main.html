@@ -35,11 +35,11 @@
         <img src="/static/images/turbine.png" alt="Turbine" id="tool-bar-turbine">
         <div class="form-group" id="radius">
           <label for="radius">Radius (m):</label>
-          <input type="number" class="form-control" id="radius-selection">
+          <input type="number" class="form-control" id="radius-selection" min="0" step="0.01" height="30">
         </div>
         <div class="form-group" id="hub-height">
           <label for="hub-height">Hub height (m):</label>
-          <select class="form-control" id="height-selection">
+          <select class="form-control" id="height-selection" height="30">
             <option>100</option>
             <option>150</option>
             <option>200</option>
@@ -47,11 +47,11 @@
         </div>
         <div class="form-group" id="air-density">
           <label for="air-density">Air density (kg/m^3):</label>
-          <input type="number" class="form-control" id="air-density-selection">
+          <input type="number" class="form-control" id="air-density-selection" min="0" step="0.001" height="30">
         </div>
         <div class="form-group" id="power-coefficient">
           <label for="power-coefficient">Power coefficient:</label>
-          <input type="number" class="form-control" id="power-coefficient-selection">
+          <input type="number" class="form-control" id="power-coefficient-selection" min="0" max="0.59" step="0.01" height="30">
         </div>
         <p><b>Power (kw) = kC</b></p>
 
