@@ -35,6 +35,15 @@
   outline: none;
   float: right;
 }
+.info-button-turbine {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  float: right;
+}
 .square-button {
   display: inline-flex;
   background-color: transparent;
