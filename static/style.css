@@ -37,7 +37,8 @@
 }
 .square-button {
   text-align: left;
-  vertical-align: top;
+  vertical-align: text-top;
+  padding: none;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
