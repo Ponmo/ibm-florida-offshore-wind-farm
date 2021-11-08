@@ -54,12 +54,15 @@
   width: 300px;
   border-right: 1px solid black;
 }
-#tool-bar-header {
+.tool-bar-header {
   border-bottom: 1px solid black;
   height: 25px;
   text-align: center;
 }
+
 #tool-bar-header-title {
+}
+#map-header {
 }
 #tool-bar-turbine {
   position: absolute;
