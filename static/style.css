@@ -62,7 +62,9 @@
 
 #tool-bar-header-title {
 }
-#map-header {
+#turbine-header {
+  border-top: 1px solid black;
+  height: 35px;
 }
 #tool-bar-turbine {
   position: absolute;
