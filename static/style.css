@@ -141,5 +141,5 @@ td {
  border: 1px solid gray;
 }
 h5 {
-  color: black;
+  color: black!important;
 }
