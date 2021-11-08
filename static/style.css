@@ -94,7 +94,8 @@
   top: 100px;
 }
 td {
- display: inline-flex;
+ vertical-align: top;
+ text-align: left;
  color: grey;
  width: 4.166666%;
  height: 6.66666%;
