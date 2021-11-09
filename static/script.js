@@ -35,7 +35,13 @@ $(document).ready(function(){
     $("#basic-grid").show();
   });
   $(".square-button").click(function() {
-    alert(this.attributes[7].value);
+    var str = this.attributes[7].value
+    var regex = /</br>/gi, result, indices = [];
+    while((result = regex.exec(str)) ) {
+      indices.push(result.index);
+    }
+    alert(str);
+    alert(regex);
     //$.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
       // of attribute nodes, which contain both the name and value
