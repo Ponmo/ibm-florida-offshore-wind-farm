@@ -35,6 +35,6 @@ $(document).ready(function(){
     $("#basic-grid").show();
   });
   $(".square-button").click(function() {
-    alert($(this).text());
+    alert($(this).innerText());
   });
 });
