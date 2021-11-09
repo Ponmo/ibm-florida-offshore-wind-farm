@@ -167,6 +167,7 @@ td {
  width: 4.166666%;
  height: 6.66666%;
  border: 1px solid gray;
+ padding: none;
 }
 strong {
   color: dimgray!important;
