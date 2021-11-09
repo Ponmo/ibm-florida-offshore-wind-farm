@@ -40,20 +40,20 @@ $(document).ready(function(){
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
-      hubHeight = 100.0
+      hubHeight = 100.0;
     }
     alert(hubHeight);
-    const radius = parseFloat(document.getElementById('radius-selection').value);
+    var radius = parseFloat(document.getElementById('radius-selection').value);
     if(isNaN(radius)) {
       radius = 75.0
     }
     alert(radius);
-    const airDensity = parseFloat(document.getElementById('air-density-selection').value);
+    var airDensity = parseFloat(document.getElementById('air-density-selection').value);
     if(isNaN(airDensity)) {
       airDensity = 1.225
     }
     alert(airDensity);
-    const powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
+    var powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
     if(isNaN(powerCoefficient)) {
       powerCoefficient = 0.25
     }
