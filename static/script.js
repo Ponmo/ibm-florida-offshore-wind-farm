@@ -36,12 +36,12 @@ $(document).ready(function(){
   });
   $(".square-button").click(function() {
     alert(this.attributes[2].value);
-    $.each(this.attributes, function() {
+    //$.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
       // of attribute nodes, which contain both the name and value
       //if(this.specified) {
       //  alert(this.value);
-      }
-    });
+      //}
+    //});
   });
 });
