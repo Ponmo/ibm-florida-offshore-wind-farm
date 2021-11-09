@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  var velocity = 0;
+  var velocityMin = 0;
+  var velocityMed = 0;
+  var velocityMax = 0;
   $("#marine-conservation-map").hide();
   $("#bathymetry-map").hide();
   $('[data-toggle="tooltip"]').tooltip();
