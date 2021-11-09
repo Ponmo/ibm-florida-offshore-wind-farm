@@ -36,10 +36,11 @@ $(document).ready(function(){
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
-    const searchStr = '</b>';
-    const indexes = [...str.matchAll(new RegExp(searchStr, 'gi'))].map(a => a.index);
+    const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
+    const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
     alert(str);
-    alert(indexes);
+    alert(indexOne);
+    alert(indexTwo);
     //$.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
       // of attribute nodes, which contain both the name and value
