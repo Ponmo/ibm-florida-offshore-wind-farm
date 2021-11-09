@@ -61,7 +61,7 @@ $(document).ready(function(){
   function evaluateData() {
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
-      hubHeight = 100.0;
+      hubHeight = "100";
     }
     var velocity = 0;
     if(hubHeight == "100") {
