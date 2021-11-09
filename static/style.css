@@ -149,6 +149,32 @@
   width: 220px;
   height: 200px
 }
+#power-output {
+  position: absolute;
+  top: 620px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+#per-turbine-info {
+  position: absolute;
+  top: 650px;
+  width: 300px;
+  text-align: center;
+}
+#annual-yield {
+  position: absolute;
+  top: 750px;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+}
+#annual-info {
+  position: absolute;
+  top: 780px;
+  width: 300px;
+  text-align: center;
+}
 .glyphicon {
   float: right;
 }
