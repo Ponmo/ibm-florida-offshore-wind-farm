@@ -25,11 +25,11 @@ def render_main():
     grid_code_basic += '<tr>'
     while square < 24:
       grid_code += '<td>'
+      point = chr(row + 65) + str(square + 1)
       if point in data:
         grid_code_basic += '<td style="border: 1px solid white;">'
       else:
         grid_code_basic += '<td>'
-      point = chr(row + 65) + str(square + 1)
       if point in data:
         value = ''
         if row == 0 and square == 0:
