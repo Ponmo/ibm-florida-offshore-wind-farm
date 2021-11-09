@@ -65,5 +65,6 @@ $(document).ready(function(){
       velocity = str.substring(indexOne[0] + 4, indexTwo[0]);
     }
     const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
+    alert(power);
   });
 });
