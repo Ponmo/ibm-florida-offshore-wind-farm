@@ -41,6 +41,6 @@ $(document).ready(function(){
     var maxWind = str.substring(parseInt(indexOne[0]) + 4, indexTwo[0]);
     var medWind = str.substring(parseInt(indexOne[1]) + 4, indexTwo[1]);
     var lowWind = str.substring(parseInt(indexOne[2]) + 4, indexTwo[2];
-    //alert(maxWind);
+    alert(maxWind);
   });
 });
