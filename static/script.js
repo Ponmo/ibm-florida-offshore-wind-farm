@@ -39,8 +39,8 @@ $(document).ready(function(){
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
     const maxWind = str.substring(indexOne[0] + 4, indexTwo[0]);
-    //const medWind = str.substring(parseInt(indexOne[1]) + 4, indexTwo[1]);
-    //const lowWind = str.substring(parseInt(indexOne[2]) + 4, indexTwo[2];
+    const medWind = str.substring(indexOne[1] + 4, indexTwo[1]);
+    const lowWind = str.substring(indexOne[2] + 4, indexTwo[2]);
     alert(str.substring(indexOne[0] + 4, indexTwo[0]));
   });
 });
