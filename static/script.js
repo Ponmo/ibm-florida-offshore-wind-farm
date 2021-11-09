@@ -42,22 +42,18 @@ $(document).ready(function(){
     if(isNaN(hubHeight)) {
       hubHeight = 100.0;
     }
-    alert(hubHeight);
     var radius = parseFloat(document.getElementById('radius-selection').value);
     if(isNaN(radius)) {
       radius = 75.0
     }
-    alert(radius);
     var airDensity = parseFloat(document.getElementById('air-density-selection').value);
     if(isNaN(airDensity)) {
       airDensity = 1.225
     }
-    alert(airDensity);
     var powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
     if(isNaN(powerCoefficient)) {
       powerCoefficient = 0.25
     }
-    alert(powerCoefficient);
     var velocity = 0;
     if(hubHeight == "100") {
       velocity = str.substring(indexOne[2] + 4, indexTwo[2]);
@@ -68,7 +64,6 @@ $(document).ready(function(){
     else {
       velocity = str.substring(indexOne[0] + 4, indexTwo[0]);
     }
-    alert(velocity);
     const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
     alert(power);
   });
