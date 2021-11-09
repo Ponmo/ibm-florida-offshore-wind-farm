@@ -37,10 +37,10 @@ $(document).ready(function(){
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
-    //const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
+    const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
     //const maxWind = str.substring(parseInt(indexOne[0]) + 4, indexTwo[0]);
     //const medWind = str.substring(parseInt(indexOne[1]) + 4, indexTwo[1]);
     //const lowWind = str.substring(parseInt(indexOne[2]) + 4, indexTwo[2];
-    alert(indexOne);
+    alert(indexTwo);
   });
 });
