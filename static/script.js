@@ -38,13 +38,25 @@ $(document).ready(function(){
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
-    const hubHeight = parseFloat(document.getElementById('height-selection').value);
+    var hubHeight = parseFloat(document.getElementById('height-selection').value);
+    if(isNaN(hubHeight)) {
+      hubHeight = 100.0
+    }
     alert(hubHeight);
     const radius = parseFloat(document.getElementById('radius-selection').value);
+    if(isNaN(radius)) {
+      radius = 75.0
+    }
     alert(radius);
     const airDensity = parseFloat(document.getElementById('air-density-selection').value);
+    if(isNaN(airDensity)) {
+      airDensity = 1.225
+    }
     alert(airDensity);
     const powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
+    if(isNaN(powerCoefficient)) {
+      powerCoefficient = 0.25
+    }
     alert(powerCoefficient);
     var velocity = 0;
     if(hubHeight == "100") {
