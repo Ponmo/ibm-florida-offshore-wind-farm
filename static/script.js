@@ -38,11 +38,11 @@ $(document).ready(function(){
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
-    const hubHeight = document.getElementById('#height_selection').value
-    const radius = document.getElementById('#radius-selection').value
-    const airDensity = document.getElementById('#air-density-selection').value
-    const powerCoefficient = document.getElementById('#power-coefficient-selection').value
-    var velocity = 0
+    const hubHeight = document.getElementById('#height_selection').value;
+    const radius = document.getElementById('#radius-selection').value;
+    const airDensity = document.getElementById('#air-density-selection').value;
+    const powerCoefficient = document.getElementById('#power-coefficient-selection').value;
+    var velocity = 0;
     if(hubHeight == "100") {
       velocity = str.substring(indexOne[2] + 4, indexTwo[2]);
     }
@@ -52,7 +52,7 @@ $(document).ready(function(){
     else {
       velocity = str.substring(indexOne[0] + 4, indexTwo[0]);
     }
-    const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient
+    const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
     alert(power);
   });
 });
