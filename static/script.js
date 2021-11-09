@@ -86,6 +86,6 @@ $(document).ready(function(){
       powerCoefficient = 0.25;
     }
     const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
-    $("#power-output").text(power.toString);
+    $("#power-output").text(power.toString());
   }
 });
