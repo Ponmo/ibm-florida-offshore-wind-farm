@@ -36,7 +36,7 @@ $(document).ready(function(){
   });
   $(".square-button").click(function() {
     var str = this.attributes[7].value
-    var regex = /</br>/gi, result, indices = [];
+    var regex = /b/gi, result, indices = [];
     while((result = regex.exec(str)) ) {
       indices.push(result.index);
     }
