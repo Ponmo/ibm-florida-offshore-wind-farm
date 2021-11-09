@@ -172,6 +172,11 @@ td {
  padding: none;
   margin: none;
 }
+button {
+  margin: none;
+  padding: none;
+}
+
 strong {
   color: dimgray!important;
 }
