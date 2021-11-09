@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  var velocity = 0;
   $("#marine-conservation-map").hide();
   $("#bathymetry-map").hide();
   $('[data-toggle="tooltip"]').tooltip();
@@ -54,7 +55,6 @@ $(document).ready(function(){
     if(isNaN(powerCoefficient)) {
       powerCoefficient = 0.25;
     }
-    var velocity = 0;
     if(hubHeight == "100") {
       velocity = str.substring(indexOne[2] + 4, indexTwo[2]);
     }
@@ -67,4 +67,7 @@ $(document).ready(function(){
     const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
     alert(power);
   });
+  function evaluateData() {
+    
+  }
 });
