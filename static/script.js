@@ -51,8 +51,6 @@ $(document).ready(function(){
     evaluateData();
   });
   
-  //data evaluation function auto input
-  
   function evaluateData() {
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
