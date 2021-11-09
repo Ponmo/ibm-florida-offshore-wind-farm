@@ -38,13 +38,13 @@ $(document).ready(function(){
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
-    const hubHeight = parseDouble(document.getElementById('height-selection').value);
+    const hubHeight = parseFloat(document.getElementById('height-selection').value);
     alert(hubHeight);
-    const radius = parseDouble(document.getElementById('radius-selection').value);
+    const radius = parseFloat(document.getElementById('radius-selection').value);
     alert(radius);
-    const airDensity = parseDouble(document.getElementById('air-density-selection').value);
+    const airDensity = parseFloat(document.getElementById('air-density-selection').value);
     alert(airDensity);
-    const powerCoefficient = parseDouble(document.getElementById('power-coefficient-selection').value);
+    const powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
     alert(powerCoefficient);
     var velocity = 0;
     if(hubHeight == "100") {
