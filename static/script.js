@@ -39,6 +39,21 @@ $(document).ready(function(){
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
+    if(hubHeight == "100") {
+      velocity = str.substring(indexOne[2] + 4, indexTwo[2]);
+    }
+    else if(hubHeight == "150") {
+      velocity = str.substring(indexOne[1] + 4, indexTwo[1]);
+    }
+    else {
+      velocity = str.substring(indexOne[0] + 4, indexTwo[0]);
+    }
+    evaluateData();
+  });
+  
+  //data evaluation function auto input
+  
+  function evaluateData() {
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
       hubHeight = 100.0;
@@ -55,19 +70,7 @@ $(document).ready(function(){
     if(isNaN(powerCoefficient)) {
       powerCoefficient = 0.25;
     }
-    if(hubHeight == "100") {
-      velocity = str.substring(indexOne[2] + 4, indexTwo[2]);
-    }
-    else if(hubHeight == "150") {
-      velocity = str.substring(indexOne[1] + 4, indexTwo[1]);
-    }
-    else {
-      velocity = str.substring(indexOne[0] + 4, indexTwo[0]);
-    }
     const power = Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient;
     alert(power);
-  });
-  function evaluateData() {
-    
   }
 });
