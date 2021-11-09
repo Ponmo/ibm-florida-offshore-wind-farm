@@ -35,13 +35,11 @@ $(document).ready(function(){
     $("#basic-grid").show();
   });
   $(".square-button").click(function() {
-    var str = this.attributes[7].value
-    var regex = /b/gi, result, indices = [];
-    while((result = regex.exec(str)) ) {
-      indices.push(result.index);
-    }
+    const str = this.attributes[7].value;
+    const searchStr = '</b>';
+    const indexes = [...str.matchAll(new RegExp(searchStr, 'gi'))].map(a => a.index);
     alert(str);
-    alert(regex);
+    alert(indexes);
     //$.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
       // of attribute nodes, which contain both the name and value
