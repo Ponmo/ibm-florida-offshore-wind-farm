@@ -35,11 +35,12 @@ $(document).ready(function(){
     $("#basic-grid").show();
   });
   $(".square-button").click(function() {
+    alert(this.attributes[4].value)
     $.each(this.attributes, function() {
       // this.attributes is not a plain object, but an array
       // of attribute nodes, which contain both the name and value
-      if(this.specified) {
-        alert(this.value);
+      //if(this.specified) {
+      //  alert(this.value);
       }
     });
   });
