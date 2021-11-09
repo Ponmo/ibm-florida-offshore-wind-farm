@@ -38,7 +38,7 @@ $(document).ready(function(){
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
-    const hubHeight = document.getElementById('#height_selection').value;
+    const hubHeight = document.getElementById('#height-selection').value;
     alert(hubHeight);
     const radius = document.getElementById('#radius-selection').value;
     alert(radius);
