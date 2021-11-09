@@ -169,6 +169,12 @@ td {
  border: 1px solid gray;
  padding: none;
 }
+button {
+  margin: none;
+  padding: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 strong {
   color: dimgray!important;
 }
