@@ -12,6 +12,9 @@ $(document).ready(function(){
     $("#bathymetry-button").removeClass("active");
     $("#marine-conservation-button").removeClass("active");
     $("#wind-grid").show();
+    $("#number-turbines").show();
+    $("#capacity-factor").show();
+    $("#number-hours").show();
     $("#basic-grid").hide();
   });
   $("#bathymetry-button").click(function() {
