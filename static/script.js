@@ -12,9 +12,6 @@ $(document).ready(function(){
     $("#bathymetry-button").removeClass("active");
     $("#marine-conservation-button").removeClass("active");
     $("#wind-grid").show();
-    $("#number-turbines").show();
-    $("#capacity-factor").show();
-    $("#number-hours").show();
     $("#basic-grid").hide();
   });
   $("#bathymetry-button").click(function() {
@@ -50,6 +47,9 @@ $(document).ready(function(){
     $("#annual-yield").show();
     $("#annual-info").show();
     $("#conversion-image").show();
+    $("#number-turbines").show();
+    $("#capacity-factor").show();
+    $("#number-hours").show();
     $("#power-select-info").hide();
   });
   $('#radius-selection').on('input', function() {
