@@ -161,20 +161,23 @@
 }
 #per-turbine-info {
   position: absolute;
-  top: 645px;
+  top: 647px;
   width: 300px;
+  font-size: 12px;
   text-align: center;
 }
 #annual-yield {
   position: absolute;
   top: 745px;
   width: 300px;
+
   text-align: center;
   font-weight: bold;
 }
 #annual-info {
   position: absolute;
-  top: 775px;
+  top: 777px;
+  font-size: 12px;
   width: 300px;
   text-align: center;
 }
