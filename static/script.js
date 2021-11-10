@@ -55,7 +55,7 @@ $(document).ready(function(){
     $("#annual-yield").show();
     $("#annual-info").show();
     $("#conversion-image").show();
-    $("#power-select-info").show();
+    $("#power-select-info").hide();
   });
   $('#radius-selection').on('input', function() {
     evaluateData();
