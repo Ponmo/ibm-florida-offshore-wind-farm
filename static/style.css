@@ -147,34 +147,34 @@
 }
 #conversion-image {
   position: absolute;
-  top: 620px;
+  top: 615px;
   left: 40px;
   width: 220px;
   height: 200px
 }
 #power-output {
   position: absolute;
-  top: 620px;
+  top: 615px;
   width: 300px;
   text-align: center;
   font-weight: bold;
 }
 #per-turbine-info {
   position: absolute;
-  top: 650px;
+  top: 645px;
   width: 300px;
   text-align: center;
 }
 #annual-yield {
   position: absolute;
-  top: 750px;
+  top: 745px;
   width: 300px;
   text-align: center;
   font-weight: bold;
 }
 #annual-info {
   position: absolute;
-  top: 780px;
+  top: 775px;
   width: 300px;
   text-align: center;
 }
@@ -188,23 +188,23 @@
 }
 #number-turbines {
   position: absolute;
-  font-size: 12px;
-  top: 685px;
-  width: 80px;
-  left: 200px;
+  font-size: 11px;
+  top: 800px;
+  width: 4px;
+  left: 50px;
 }
 #capacity-factor {
   position: absolute;
-  font-size: 12px;
-  top: 675px;
-  width: 80px;
-  left: 30px;
+  font-size: 11px;
+  top: 685px;
+  width: 90px;
+  left: 20px;
 }
 #number-hours {
   position: absolute;
-  font-size: 12px;
-  top: 305px;
-  width: 80px;
+  font-size: 11px;
+  top: 685px;
+  width: 90px;
   left: 190px;
 }
 .florida-map {
