@@ -187,10 +187,25 @@
   margin-top: 275px;
 }
 #number-turbines {
+  position: absolute;
+  font-size: 12px;
+  top: 685px;
+  width: 80px;
+  left: 200px;
 }
 #capacity-factor {
+  position: absolute;
+  font-size: 12px;
+  top: 675px;
+  width: 80px;
+  left: 30px;
 }
 #number-hours {
+  position: absolute;
+  font-size: 12px;
+  top: 305px;
+  width: 80px;
+  left: 190px;
 }
 .florida-map {
   position: absolute;
