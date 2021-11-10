@@ -7,6 +7,11 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
   $("#basic-grid").hide();
+  $("#power-output").hide();
+  $("#per-turbine-info").hide();
+  $("#annual-yield").hide();
+  $("#annual-info").hide();
+  $("#conversion-image").hide();
   $("#basic-button").click(function() {
     $("#basic-map").show();
     $("#bathymetry-map").hide();
@@ -45,6 +50,12 @@ $(document).ready(function(){
     velocityMed = str.substring(indexOne[1] + 4, indexTwo[1]);
     velocityMax = str.substring(indexOne[0] + 4, indexTwo[0]);
     evaluateData();
+    $("#power-output").show();
+    $("#per-turbine-info").show();
+    $("#annual-yield").show();
+    $("#annual-info").show();
+    $("#conversion-image").show();
+    $("#power-select-info").show();
   });
   $('#radius-selection').on('input', function() {
     evaluateData();
