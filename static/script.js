@@ -2,16 +2,8 @@ $(document).ready(function(){
   var velocityMin = 0;
   var velocityMed = 0;
   var velocityMax = 0;
-  $("#marine-conservation-map").hide();
-  $("#bathymetry-map").hide();
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
-  $("#basic-grid").hide();
-  $("#power-output").hide();
-  $("#per-turbine-info").hide();
-  $("#annual-yield").hide();
-  $("#annual-info").hide();
-  $("#conversion-image").hide();
   $("#basic-button").click(function() {
     $("#basic-map").show();
     $("#bathymetry-map").hide();
