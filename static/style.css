@@ -26,6 +26,9 @@
 .pointer {
   cursor: pointer;
 }
+#marine-conservation-map, #basic-grid, #bathymetry-map, #power-output, #per-turbine-info, #annual-yield, #annual-info, #conversion-image {
+  display: none;
+}
 .info-buttons {
   background-color: transparent;
   background-repeat: no-repeat;
