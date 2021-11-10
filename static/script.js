@@ -89,6 +89,6 @@ $(document).ready(function(){
       powerCoefficient = 0.25;
     }
     const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001))/100;
-    $("#power-output").text(power.toString());
+    $("#power-output").text(power.toString() + " kW");
   }
 });
