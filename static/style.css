@@ -186,6 +186,12 @@
   height: 35px;
   margin-top: 275px;
 }
+#number-turbines {
+}
+#capacity-factor {
+}
+#number-hours {
+}
 .florida-map {
   position: absolute;
   min-width: 1200px;
