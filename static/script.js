@@ -50,6 +50,7 @@ $(document).ready(function(){
     $("#number-turbines").show();
     $("#capacity-factor").show();
     $("#number-hours").show();
+    $("#number-turbines-label").show();
     $("#power-select-info").hide();
   });
   $('#radius-selection').on('input', function() {
