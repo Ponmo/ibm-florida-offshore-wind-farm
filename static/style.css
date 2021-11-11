@@ -78,6 +78,8 @@
   outline: none;
   width: 100%;
   height: 100%;
+  color: inherit;
+  text-decoration: inherit;
 }
 #tool-bar {
   min-height: 750px;
