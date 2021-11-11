@@ -80,14 +80,10 @@
   height: 100%;
   color: gray;
 }
-.square-button:hover {
-  color: gray;
+ .square-button, .square-button:hover, .square-button:focus, .square-button:active {
   text-decoration: none;
-}
-.square-button:active {
-  color: gray;
-  text-decoration: none;
-}
+  color: inherit;
+ }
 #tool-bar {
   min-height: 750px;
   height: -webkit-calc((100vw - 315px)/1.6);
