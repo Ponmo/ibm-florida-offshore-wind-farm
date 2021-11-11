@@ -71,6 +71,9 @@ $(document).ready(function(){
   $("#capacity-factor-selection").on('input', function() {
     evaluateData();
   });
+  $("#number-turbines-selection").on('input', function() {
+    evaluateData();
+  });
   function evaluateData() {
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
