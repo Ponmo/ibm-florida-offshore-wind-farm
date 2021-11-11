@@ -14,6 +14,7 @@
 #header-symbol {
   height: 75px;
   width: 75px;
+  display: inline-block;
 }
 #title {
   font-family: "Verdana", "Trebuchet MS", Helvetica, sans-serif;
@@ -21,6 +22,7 @@
   font-size: 24px;
   padding-top: 30px;
   padding-left: 30px;
+  display: inline-block;
 }
 #body-elements {
   display: flex;
