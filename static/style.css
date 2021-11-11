@@ -189,12 +189,18 @@
   height: 35px;
   margin-top: 275px;
 }
-#number-turbines {
+#number-turbines-label {
   position: absolute;
   font-size: 11px;
-  top: 800px;
-  width: 4px;
-  left: 50px;
+  top: 817px;
+  left: 200px;
+}
+#number-turbines-selection {
+  position: absolute;
+  font-size: 11px;
+  top: 810px;
+  width: 90px;
+  left: 105px;
 }
 #capacity-factor {
   position: absolute;
