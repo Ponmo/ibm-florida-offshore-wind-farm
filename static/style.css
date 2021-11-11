@@ -235,10 +235,10 @@ td {
  vertical-align: top;
  text-align: left;
  color: gray;
- width: 4.166666%;
- height: -webkit-calc(((100vw - 315px)/1.6)/15);
- height:    -moz-calc(((100vw - 315px)/1.6)/15);
- height:         calc(((100vw - 315px)/1.6)/15);
+ min-width: 4.166666%;
+ min-height: -webkit-calc(((100vw - 315px)/1.6)/15);
+ min-height:    -moz-calc(((100vw - 315px)/1.6)/15);
+ min-height:         calc(((100vw - 315px)/1.6)/15);
  border: 1px solid gray;
  padding: none;
  margin: none;
