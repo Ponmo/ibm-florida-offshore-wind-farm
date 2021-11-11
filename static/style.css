@@ -11,6 +11,10 @@
   right: 100px;
   top: 63px;
 }
+#header-symbol {
+  height: 75px;
+  width: 75px;
+}
 #title {
   font-family: "Verdana", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: bold;
