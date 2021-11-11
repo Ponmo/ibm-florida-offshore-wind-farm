@@ -104,7 +104,7 @@ $(document).ready(function(){
     }
     var time = parseFloat(document.getElementById('number-hours-selection').value);
     if(isNaN(time)) {
-      time = 0.35;
+      time = 4800;
     }
     const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001)) / 100;
     $("#power-output").text(power.toString() + " kW");
