@@ -64,10 +64,10 @@ $(document).ready(function(){
   $("#height-selection").change(function() {
     evaluateData();
   });
-  $("#number-hours-selection").change(function() {
+  $("#number-hours-selection").on('input', function() {
     evaluateData();
   });
-  $("#capacity-factor-selection").change(function() {
+  $("#capacity-factor-selection").on('input', function() {
     evaluateData();
   });
   function evaluateData() {
