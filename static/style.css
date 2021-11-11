@@ -1,11 +1,9 @@
-body {
-  background-image: url("/static/images/download.jpeg");
-  background-repeat: repeat;
-}
 #heading-bar {
   height: 100px;
   width: 100%;
   border-bottom: 1px solid black;
+  background-image: url("/static/images/download.jpeg");
+  background-repeat: repeat;
 }
 #navbar {
   font-family: "Verdana", "Trebuchet MS", Helvetica, sans-serif;
