@@ -54,8 +54,8 @@ def render_main():
           value = str(square + 1)
         elif square == 0:
           value = chr(row + 65)
-        grid_code += '&nbsp;' + value + '</td>'
-        grid_code_basic += '&nbsp;' + value + '</td>'
+        grid_code += value + '</td>'
+        grid_code_basic += value + '</td>'
       square += 1
     grid_code += '</tr>'
     grid_code_basic += '</tr>'
