@@ -248,6 +248,7 @@ td {
  border: 1px solid gray;
  padding: none;
  margin: none;
+   white-space: nowrap;
 }
 
 strong {
