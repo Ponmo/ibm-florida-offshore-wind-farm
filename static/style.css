@@ -1,5 +1,5 @@
 body {
-  background-image: url("download.jpeg");
+  background-image: url("/static/images/download.jpeg");
   background-repeat: repeat;
 }
 #heading-bar {
