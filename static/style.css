@@ -2,7 +2,7 @@
   height: 100px;
   width: 100%;
   border-bottom: 1px solid black;
-  background-image: url("/static/images/download.jpeg");
+  background-image: url("/static/images/background.jpeg");
   background-repeat: repeat;
 }
 #navbar {
