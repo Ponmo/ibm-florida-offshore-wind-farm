@@ -241,7 +241,8 @@ td {
  height:         calc(((100vw - 315px)/1.6)/15);
  border: 1px solid gray;
  padding: none;
-  margin: none;
+ margin: none;
+ white-space: nowrap;
 }
 
 strong {
