@@ -1,3 +1,7 @@
+body {
+  background-image: url("download.jpeg");
+  background-repeat: repeat;
+}
 #heading-bar {
   height: 100px;
   width: 100%;
