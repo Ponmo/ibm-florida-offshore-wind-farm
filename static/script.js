@@ -3,7 +3,6 @@ $(document).ready(function(){
   var velocityMed = 0;
   var velocityMax = 0;
   $('[data-toggle="tooltip"]').tooltip();
-  $tooltipProvider.setTriggers({ 'click focus': 'mouseleave blur' });
   $('[data-toggle="popover"]').popover();
   $("#basic-button").click(function() {
     $("#basic-map").show();
