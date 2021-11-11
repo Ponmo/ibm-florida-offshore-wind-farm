@@ -91,7 +91,17 @@ $(document).ready(function(){
     if(isNaN(powerCoefficient)) {
       powerCoefficient = 0.25;
     }
-    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001))/100;
+    var capacityFactor = parseFloat(document.getElementById('capacity-factor-selection').value);
+    if(isNaN(capacityFactor)) {
+      capacityFactor = 0.35;
+    }
+    var time = parseFloat(document.getElementById('number-hours-selection').value);
+    if(isNaN(time)) {
+      time = 0.35;
+    }
+    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001)) / 100;
     $("#power-output").text(power.toString() + " kW");
+    const powerTime = Math.round(100 * (power * capacityFactor * time) / 100);
+    $("#annual-yield").text(powerTime.toString() + " kWh");
   }
 });
