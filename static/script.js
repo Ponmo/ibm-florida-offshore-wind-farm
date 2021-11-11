@@ -106,9 +106,13 @@ $(document).ready(function(){
     if(isNaN(time)) {
       time = 4800;
     }
+    var number = parseFloat(document.getElementById('number-turbines-selection').value);
+    if(isNaN(number)) {
+      number = 1;
+    }
     const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001)) / 100;
     $("#power-output").text(power.toString() + " kW");
-    const powerTime = Math.round(100 * (power * capacityFactor * time)) / 100;
+    const powerTime = Math.round(100 * (power * capacityFactor * time * number)) / 100;
     $("#annual-yield").text(powerTime.toString() + " kWh");
   }
 });
