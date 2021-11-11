@@ -64,6 +64,12 @@ $(document).ready(function(){
   $("#height-selection").change(function() {
     evaluateData();
   });
+  $("#number-hours-selection").change(function() {
+    evaluateData();
+  });
+  $("#capacity-factor-selection").change(function() {
+    evaluateData();
+  });
   function evaluateData() {
     var hubHeight = parseFloat(document.getElementById('height-selection').value);
     if(isNaN(hubHeight)) {
