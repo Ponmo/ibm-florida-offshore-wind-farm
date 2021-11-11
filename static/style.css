@@ -242,6 +242,8 @@ td {
  text-align: left;
  color: gray;
  width: 4.166666%;
+ min-width: 48px;
+ min-height: 50px;
  height: -webkit-calc(((100vw - 315px)/1.6)/15);
  height:    -moz-calc(((100vw - 315px)/1.6)/15);
  height:         calc(((100vw - 315px)/1.6)/15);
