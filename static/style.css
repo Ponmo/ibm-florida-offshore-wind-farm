@@ -285,3 +285,9 @@ strong {
     border-top: 1px solid grey;
   border-left: 1px solid grey;
 }
+#county-info {
+  position: absolute;
+  top: 340px;
+  left: 630px;
+  font-size: 13px;
+}
