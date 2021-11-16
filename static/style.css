@@ -287,8 +287,9 @@ strong {
 }
 #county-info {
   position: absolute;
-  top: 100px;
+  top:740px;
   left: 300px;
   font-size: 13px;
   padding: 10px;
 }
+
