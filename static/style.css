@@ -279,4 +279,6 @@ strong {
   height:         calc((100vw - 315px)/1.6);
   left: 300px;
   top: 100px;
+    border-top: 1px solid grey;
+  border-left: 1px solid grey;
 }
