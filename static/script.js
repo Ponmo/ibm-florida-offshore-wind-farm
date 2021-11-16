@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var counties = {
-  brevard: "info",
+  Brevard: "info",
   };
   var velocityMin = 0;
   var velocityMed = 0;
