@@ -1,6 +1,72 @@
 $(document).ready(function(){
   var counties = {
-  Brevard: "info",
+  "Alachua": "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Baker"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Bay"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Bradford"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Brevard"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Broward"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Calhoun"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Charlotte"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Citrus"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Clay"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Collier"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Columbia"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "DeSoto"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Dixie"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Duval"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Escambia"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Flagler"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Franklin"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Gadsden"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Gilchrist"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Glades"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Gulf"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Hamilton"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Hardee"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Hendry"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Hernando"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Highlands"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Hillsborough"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Holmes"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Indian River"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Jackson"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Jefferson"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Lafayette"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Lake"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Lee"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Leon"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Levy"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Liberty"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Madison"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Manatee"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Marion"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Martin"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Miami Dade"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Monroe"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Nassau"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Okaloosa"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Okeechobee"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Orange"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Osceola"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Palm Beach"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Pasco"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Pinellas"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Polk"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Putnam"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "St Johns"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "St Lucie"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Santa Rosa"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Sarasota"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Seminole"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Sumter"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Suwannee"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Taylor"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Union"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Volusia"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Wakulla"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Walton"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
+  "Washington"  : "Energy Consumption 2020: Expected Energy Consumption Change 2025: ",
   };
   var velocityMin = 0;
   var velocityMed = 0;
@@ -56,8 +122,8 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("path").click(function() {
-    //$(this).attr('id')
-    $("#county-info").html("<b>" + $(this).attr('id') + " County<b><br>Info: " + counties[$(this).attr('id')]);
+    const name = string.replace($(this).attr('id'), ' ');
+    $("#county-info").html("<b>" + name + " County<b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
