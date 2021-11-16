@@ -34,6 +34,16 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#basic-grid").show();
   });
+  $("#county-button").click(function() {
+    $("#basic-map").hide();
+    $("#bathymetry-map").hide();
+    $("#marine-conservation-map").hide();
+    $("#basic-button").removeClass("active");
+    $("#bathymetry-button").removeClass("active");
+    $("#marine-conservation-button").removeClass("active");
+    $("#wind-grid").hide();
+    $("#basic-grid").hide();
+  });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
