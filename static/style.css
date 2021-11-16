@@ -104,7 +104,9 @@
   text-align: center;
 }
 
-#tool-bar-header-title {
+.nav {
+  font-size: 12px;
+  padding-bottom: -1px;
 }
 #turbine-header {
   border-top: 1px solid black;
