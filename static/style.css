@@ -287,18 +287,13 @@ strong {
 }
 #county-info {
   font-size: 13px;
-  padding: 5px;
+  padding: 10px;
   font-weight: bold;
   
 }
 #county-facts {
   position: absolute;
-  top: 310px;
-  left: 630px;
-  border-width: 5px;
-     border-style: outset;
-     border-color: #337ab7;
-     border-radius: 10px;
-     width: 200px;
-     height: 200px;
+  top: 100px;
+  left: 300px;
+  border-width: 1px;
 }
