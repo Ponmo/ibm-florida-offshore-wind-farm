@@ -40,12 +40,12 @@ def render_main():
                       data[point]['coordinates'] + '</strong>" data-toggle="popover" data-trigger="focus" data-content="<b>Wind Speed 200m (m/s):</b> ' +
                       str(data[point]['200wind']) + '<br><b>Wind Speed 150m (m/s):</b> ' + str(data[point]['150wind']) + '<br><b>Wind Speed 100m (m/s):</b> ' + 
                       str(data[point]['100wind']) + '<br><b>Depth (m):</b> ' + str(data[point]['depth']) +
-                      '" data-toggle="popover" data-trigger="focus" data-content="popover" tabindex="0" role="button">' + value + '</a></td>')
+                      '"tabindex="0" role="button">' + value + '</a></td>')
         grid_code_basic += ('<a style="background-color: transparent;" class="square-button" data-html="true" data-placement="auto right" title="<strong>' +
                             data[point]['coordinates'] + '</strong>" data-toggle="popover" data-trigger="focus" data-trigger="focus" data-content="<b>Wind Speed 200m (m/s):</b> ' +
                             str(data[point]['200wind']) + '<br><b>Wind Speed 150m (m/s):</b> ' + str(data[point]['150wind']) + '<br><b>Wind Speed 100m (m/s):</b> ' + 
                             str(data[point]['100wind']) + '<br><b>Depth (m):</b> ' + str(data[point]['depth']) +
-                            '" data-toggle="popover" data-content="popover" tabindex="0" role="button">' + value + '</a></td>')
+                            '"tabindex="0" role="button">' + value + '</a></td>')
       else:
         value = ''
         if row == 0 and square == 0:
