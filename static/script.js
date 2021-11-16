@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var counties = {
-  brevard: "info"
+  brevard: "info",
   };
   var velocityMin = 0;
   var velocityMed = 0;
@@ -57,7 +57,7 @@ $(document).ready(function(){
   });
   $("path").click(function() {
     //$(this).attr('id')
-    $("#county-info").html("<b>" + $(this).attr('id') + " County<b>");
+    $("#county-info").html("<b>" + $(this).attr('id') + " County<b><br>Info: " + counties[$(this).attr('id')]);
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
