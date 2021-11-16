@@ -1,6 +1,6 @@
 #heading-bar {
-  height: 100px;
-  width: 100%;
+    height: 100px;
+  min-width: 1500px;
   border-bottom: 1px solid black;
 }
 #navbar {
