@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  var counties = {
+  brevard: "info"
+  };
   var velocityMin = 0;
   var velocityMed = 0;
   var velocityMax = 0;
@@ -51,6 +54,10 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").show();
     $("#basic-grid").hide();
+  });
+  $("path").click(function() {
+    //$(this).attr('id')
+    $("#county-info").text("<b>" + $(this).attr('id') + " County<b>");
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
