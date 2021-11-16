@@ -267,9 +267,16 @@ td {
 strong {
   color: dimgray!important;
 }
-#svg823 {
+#county-map-wrap {
   position: absolute;
-  top: 30px;
-  left: 530px;
-  width: 680px;
+  min-width: 1200px;
+  width: -webkit-calc(100vw - 315px);
+  width:    -moz-calc(100vw - 315px);
+  width:         calc(100vw - 315px);
+  min-height: 750px;
+  height: -webkit-calc((100vw - 315px)/1.6);
+  height:    -moz-calc((100vw - 315px)/1.6);
+  height:         calc((100vw - 315px)/1.6);
+  left: 300px;
+  top: 100px;
 }
