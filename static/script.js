@@ -123,7 +123,7 @@ $(document).ready(function(){
   });
   $("path").click(function() {
     const name = $(this).attr('id').replace('-', ' ');
-    $("#county-info").html("<b>" + name + " County<b><br>" + counties[name]);
+    $("#county-info").html("<b>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
