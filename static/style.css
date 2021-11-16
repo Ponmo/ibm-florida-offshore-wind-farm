@@ -32,7 +32,7 @@
 .pointer {
   cursor: pointer;
 }
-#marine-conservation-map, #number-turbines-label, #basic-grid, #bathymetry-map, #power-output, #per-turbine-info, #annual-yield, #annual-info, #conversion-image, #number-hours, #capacity-factor, #number-turbines {
+#marine-conservation-map, #number-turbines-label, #basic-grid, #bathymetry-map, #power-output, #per-turbine-info, #annual-yield, #annual-info, #conversion-image, #number-hours, #capacity-factor, #number-turbines, #county-map-wrap {
   display: none;
 }
 .info-buttons {
