@@ -122,7 +122,7 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("path").click(function() {
-    const name = string.replace($(this).attr('id'), ' ');
+    const name = $(this).attr('id').replace('-', ' ');
     $("#county-info").html("<b>" + name + " County<b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
