@@ -57,7 +57,7 @@ $(document).ready(function(){
   });
   $("path").click(function() {
     //$(this).attr('id')
-    $("#county-info").text("<b>" + $(this).attr('id') + " County<b>");
+    $("#county-info").html("<b>" + $(this).attr('id') + " County<b>");
   });
   $(".square-button").click(function() {
     const str = this.attributes[7].value;
