@@ -73,10 +73,10 @@ $(document).ready(function(){
     const data = counties[name]
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
-    let power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replaceAll(",", "")));
-    const red = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
+    const power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replaceAll(",", "")));
+    const blue = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
     $(this).removeAttr("fill");
-    $(this).attr("fill", "rgb(" + String(red) + ",255,0)");
+    $(this).attr("fill", "rgb(255, 0," + String(blue) + ")");
   });
   var velocityMin = 0;
   var velocityMed = 0;
