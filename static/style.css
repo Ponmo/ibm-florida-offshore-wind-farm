@@ -266,7 +266,12 @@ td {
  margin: none;
    white-space: nowrap;
 }
-
+path {
+  stroke: #ffffff;
+  stroke-width: 1px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
 strong {
   color: dimgray!important;
 }
