@@ -75,12 +75,10 @@ $(document).ready(function(){
     const power = Math.abs(parseFloat(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
-    const green = parseInt(((((1 / power) - 0.00000002) * (165 - 0)) / (0.001 - 0.00000002)) + 0)
-    //const color = "rgb(255," + str(green) + ",0)";
-    //alert(green);
+    const green = parseInt((((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0)
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
     $(this).removeAttr("fill");
-    $(this).attr("fill", "rgb(255," + String(green) + ",0)");//"rgb(255," + str(green) + ", 0)");
+    $(this).attr("fill", "rgb(255," + String(green) + ",0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
