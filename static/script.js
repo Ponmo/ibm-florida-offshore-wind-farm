@@ -74,12 +74,9 @@ $(document).ready(function(){
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
     let power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replaceAll(",", "")));
-    //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
-    //const green = (1 / power * 165);
-    const green = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
-    //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
+    const red = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
     $(this).removeAttr("fill");
-    $(this).attr("fill", "rgb(255," + String(green) + ",0)");
+    $(this).attr("fill", "rgb(" + String(red) + ",255,0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
