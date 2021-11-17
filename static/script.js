@@ -77,7 +77,7 @@ $(document).ready(function(){
     const green = (1 / power * 165);
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
     $(this).removeAttr("fill");
-    $(this).attr("fill", "#000000");//"rgb(255," + str(green) + ", 0)");
+    $(this).attr("fill", "rgb(200,200,200)");//"rgb(255," + str(green) + ", 0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
