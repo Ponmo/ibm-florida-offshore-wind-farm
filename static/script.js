@@ -74,7 +74,6 @@ $(document).ready(function(){
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
     let power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replaceAll(",", "")));
-    alert(power);
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
     const green = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
