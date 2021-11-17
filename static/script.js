@@ -75,7 +75,7 @@ $(document).ready(function(){
     const power = Math.abs(parseFloat(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
-    const green = ((( (1 / power) - 0.00000002) * (165 - 0)) / (0.001 - 0.00000002)) + 0
+    const green = parseInt(((((1 / power) - 0.00000002) * (165 - 0)) / (0.001 - 0.00000002)) + 0)
     //alert(green);
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
     $(this).removeAttr("fill");
