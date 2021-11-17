@@ -69,20 +69,18 @@ $(document).ready(function(){
   "Washington"  : "<b>Energy Consumption 2020 (MWh):</b> 285,195<br>Expected Energy Consumption Change 2025: 175,859<br><b>Population 2020:</b> 25,200<br>Estimated Population 2025: 25,900",
   };
   $("path").each(function() {
-    const name = $(this).attr('id').replace('-', ' ');
+    const name = $(this).attr('id').replaceAll('-', ' ');
     const data = counties[name]
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
-    let power = data.substring(indexOne + 13, indexTwo).replace(",", "");
+    let power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replaceAll(",", "")));
     alert(power);
-    //const power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replace(',', '')));
-    //alert(power);
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
-    //const green = parseInt((((power/10000 - 0.01) * (255 - 1)) / (500 - 0.01)) + 1)
+    const green = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0)
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-    //$(this).removeAttr("fill");
-    //$(this).attr("fill", "rgb(255," + String(green) + ",0)");
+    $(this).removeAttr("fill");
+    $(this).attr("fill", "rgb(255," + String(green) + ",0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
@@ -142,7 +140,7 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("path").click(function() {
-    const name = $(this).attr('id').replace('-', ' ');
+    const name = $(this).attr('id').replaceAll('-', ' ');
     $("#county-info").html("<b>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
