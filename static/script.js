@@ -73,15 +73,16 @@ $(document).ready(function(){
     const data = counties[name]
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
-    alert(String(indexOne) + " " + String(indexTwo));
-    const power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replace(',', '')));
+    const power = data.substring(indexOne + 13, indexTwo);
+    alert(power);
+    //const power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replace(',', '')));
     //alert(power);
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
-    const green = parseInt((((power/10000 - 0.01) * (255 - 1)) / (500 - 0.01)) + 1)
+    //const green = parseInt((((power/10000 - 0.01) * (255 - 1)) / (500 - 0.01)) + 1)
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
-    $(this).removeAttr("fill");
-    $(this).attr("fill", "rgb(255," + String(green) + ",0)");
+    //$(this).removeAttr("fill");
+    //$(this).attr("fill", "rgb(255," + String(green) + ",0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
