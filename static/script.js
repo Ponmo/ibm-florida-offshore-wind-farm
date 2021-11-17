@@ -76,12 +76,12 @@ $(document).ready(function(){
     const power = Math.abs(parseFloat(data.substring(indexOne + 17, indexTwo).replaceAll(",", "")));
     let color = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
     $(this).removeAttr("fill");
-    if color < 127 {
-      color *= 2
+    if(color < 127) {
+      color *= 2;
       $(this).attr("fill", "rgb(255, 0," + String(color) + ")");
     }
     else {
-      color = 255 - color * 2
+      color = 255 - color * 2;
       $(this).attr("fill", "rgb(" + String(color) + ", 0, 255)");
     }
   });
