@@ -133,7 +133,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-info").show();
     $("#county-map-wrap").show();
-    $("#basic-grid").hide();
+    $("#basic-grid").show();
   });
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
