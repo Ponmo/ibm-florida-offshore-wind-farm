@@ -68,11 +68,11 @@ $(document).ready(function(){
   "Walton"  : "<b>Energy Consumption 2020 (MWh):</b> 829,297<br>Expected Energy Consumption Change 2025: 318,877<br><b>Population 2020:</b> 72,100<br>Estimated Population 2025: 81,500",
   "Washington"  : "<b>Energy Consumption 2020 (MWh):</b> 285,195<br>Expected Energy Consumption Change 2025: 175,859<br><b>Population 2020:</b> 25,200<br>Estimated Population 2025: 25,900",
   };
-  $( "path" ).each(function() {
+  $("path").each(function() {
     const name = $(this).attr('id').replace('-', ' ');
     const indexOne = counties[name].indexOf("2025: ");
-    const indexTwo = counties[name].indexOf("<br><b>Population")
-    const power = Math.abs(float(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
+    const indexTwo = counties[name].indexOf("<br><b>Population");
+    const power = Math.abs(parseFloat(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     const green = (1 / power * 165);
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
