@@ -73,7 +73,7 @@ $(document).ready(function(){
     const data = counties[name]
     const indexOne = data.indexOf("Change 2025: ");
     const indexTwo = data.indexOf("<br><b>Population");
-    const power = data.substring(indexOne + 13, indexTwo);
+    let power = data.substring(indexOne + 13, indexTwo).replace(",", "");
     alert(power);
     //const power = Math.abs(parseFloat(data.substring(indexOne + 13, indexTwo).replace(',', '')));
     //alert(power);
