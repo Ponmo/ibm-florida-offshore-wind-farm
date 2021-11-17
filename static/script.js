@@ -77,7 +77,7 @@ $(document).ready(function(){
     //const green = (1 / power * 165);
     const green = parseInt(((((1 / power) - 0.00000002) * (165 - 0)) / (0.001 - 0.00000002)) + 0)
     //const color = "rgb(255," + str(green) + ",0)";
-    const color = "rgb(255," + str(12) + ",0)";
+    const color = ("rgb(255," + str(12) + ",0)");
     //alert(green);
     //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
     $(this).removeAttr("fill");
