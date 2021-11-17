@@ -72,10 +72,12 @@ $(document).ready(function(){
     const name = $(this).attr('id').replace('-', ' ');
     const indexOne = counties[name].indexOf("2025: ");
     const indexTwo = counties[name].indexOf("<br><b>Population")
-    const index = counties[name].substring(indexOne + 6, indexTwo);
-    alert(index);
+    const power = Math.abs(float(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
+    //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
+    const green = (((1 / power - 0 * 165) / (1 - 0)) + 0
+    //NewValue = (((OldValue - OldMin) * (NewMax - NewMin)) / (OldMax - OldMin)) + NewMin
     $(this).removeAttr("fill");
-    $(this).attr("fill","#000000");
+    $(this).attr("fill","rgb(255," + str(green) + ", 0)");
   });
   var velocityMin = 0;
   var velocityMed = 0;
