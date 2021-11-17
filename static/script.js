@@ -71,7 +71,7 @@ $(document).ready(function(){
   $("path").each(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
     const data = counties[name]
-    const indexOne = data.indexOf("Change 2025: ");
+    const indexOne = data.indexOf("Change 2025:</b> ");
     const indexTwo = data.indexOf("<br><b>Population");
     const power = Math.abs(parseFloat(data.substring(indexOne + 17, indexTwo).replaceAll(",", "")));
     const blue = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
