@@ -68,6 +68,11 @@ $(document).ready(function(){
   "Walton"  : "<b>Energy Consumption 2020 (MWh):</b> 829,297<br>Expected Energy Consumption Change 2025: 318,877<br><b>Population 2020:</b> 72,100<br>Estimated Population 2025: 81,500",
   "Washington"  : "<b>Energy Consumption 2020 (MWh):</b> 285,195<br>Expected Energy Consumption Change 2025: 175,859<br><b>Population 2020:</b> 25,200<br>Estimated Population 2025: 25,900",
   };
+  $( "path" ).each(function() {
+    const name = $(this).attr('id').replace('-', ' ');
+    $(this).removeAttr("fill");
+    $(this).attr("fill","#000000");
+  });
   var velocityMin = 0;
   var velocityMed = 0;
   var velocityMax = 0;
