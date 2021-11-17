@@ -72,7 +72,7 @@ $(document).ready(function(){
     const name = $(this).attr('id').replace('-', ' ');
     const indexOne = counties[name].indexOf("2025: ");
     const indexTwo = counties[name].indexOf("<br><b>Population");
-    const power = Math.abs(parseFloat(counties[name].substring(indexOne + 6, indexTwo).replace(',', '')));
+    const power = Math.abs(parseFloat(counties[name].substring(indexOne + 5, indexTwo).replace(',', '')));
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
     const green = parseInt((((power - 1000) * (255 - 1)) / (5000000 - 1000)) + 1)
