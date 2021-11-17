@@ -71,9 +71,9 @@ $(document).ready(function(){
   $("path").each(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
     const data = counties[name]
-    const indexOne = data.indexOf("Change 2025:</b> ");
+    const indexOne = data.indexOf("2025 (MWh):</b> ");
     const indexTwo = data.indexOf("<br><b>Population");
-    const power = Math.abs(parseFloat(data.substring(indexOne + 17, indexTwo).replaceAll(",", "")));
+    const power = Math.abs(parseFloat(data.substring(indexOne + 16, indexTwo).replaceAll(",", "")));
     let color = (((power - 1000) * (255 - 0)) / (5000000 - 1000)) + 0
     $(this).removeAttr("fill");
     if(color < 127) {
