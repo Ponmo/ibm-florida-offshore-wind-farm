@@ -70,6 +70,10 @@ $(document).ready(function(){
   };
   $( "path" ).each(function() {
     const name = $(this).attr('id').replace('-', ' ');
+    const indexOne = counties[name].indexOf("2025: ");
+    const indexTwo = counties[name].indexOf("<br><b>Population")
+    const index = counties[name].substring(indexOne + 6, indexTwo);
+    alert(index);
     $(this).removeAttr("fill");
     $(this).attr("fill","#000000");
   });
