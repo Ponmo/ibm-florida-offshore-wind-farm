@@ -70,9 +70,10 @@ $(document).ready(function(){
   };
   $("path").each(function() {
     const name = $(this).attr('id').replace('-', ' ');
-    const indexOne = counties[name].indexOf("2025: ");
+    const indexOne = counties[name].indexOf("Change 2025: ");
     const indexTwo = counties[name].indexOf("<br><b>Population");
-    const power = Math.abs(parseFloat(counties[name].substring(indexOne + 5, indexTwo).replace(',', '')));
+    const power = Math.abs(parseFloat(counties[name].substring(indexOne + 13, indexTwo).replace(',', '')));
+    alert(power);
     //let green = (((1 / power - 0.125) * 165) / (0.1667 - 0.125))
     //const green = (1 / power * 165);
     const green = parseInt((((power/10000 - 0.01) * (255 - 1)) / (500 - 0.01)) + 1)
