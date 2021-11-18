@@ -302,13 +302,13 @@ strong {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 
-  width: 250px;
+  width: 300px;
 }
 #remove-county {
   position: absolute;
-  right: 10px;
+  right: 11px;
   cursor: pointer;
-  top: 10px;
-  font-size: 17px;
-
+  top: 11px;
+  font-size: 16px;
 }
+
