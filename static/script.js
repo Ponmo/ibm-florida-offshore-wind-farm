@@ -226,9 +226,9 @@ $(document).ready(function(){
     if(isNaN(number)) {
       number = 1;
     }
-    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.000001)) / 100;
+    const power = Math.round(1000 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.000001)) / 1000;
     $("#power-output").text(power.toString() + " MW");
-    const powerTime = Math.round(100 * (power * capacityFactor * time * number)) / 100;
+    const powerTime = Math.round(1000 * (power * capacityFactor * time * number)) / 1000;
     $("#annual-yield").text(powerTime.toString() + " MWh");
   }
 });
