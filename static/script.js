@@ -227,8 +227,8 @@ $(document).ready(function(){
       number = 1;
     }
     const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001)) / 100;
-    $("#power-output").text(power.toString() + " kW");
+    $("#power-output").text(power.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " kW");
     const powerTime = Math.round(100 * (power * capacityFactor * time * number * 0.001)) / 100;
-    $("#annual-yield").text(powerTime.toString() + " MWh");
+    $("#annual-yield").text(powerTime.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " MWh");
   }
 });
