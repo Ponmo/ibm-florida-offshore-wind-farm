@@ -204,7 +204,7 @@ $(document).ready(function(){
     }
     var radius = parseFloat(document.getElementById('radius-selection').value);
     if(isNaN(radius)) {
-      radius = 75.0;
+      radius = 85.0;
     }
     var airDensity = parseFloat(document.getElementById('air-density-selection').value);
     if(isNaN(airDensity)) {
@@ -212,7 +212,7 @@ $(document).ready(function(){
     }
     var powerCoefficient = parseFloat(document.getElementById('power-coefficient-selection').value);
     if(isNaN(powerCoefficient)) {
-      powerCoefficient = 0.25;
+      powerCoefficient = 0.45;
     }
     var capacityFactor = parseFloat(document.getElementById('capacity-factor-selection').value);
     if(isNaN(capacityFactor)) {
