@@ -147,7 +147,7 @@ $(document).ready(function(){
     $("#county-info").html("<b style='font-size: 15px;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
-    $("#tool-bar-header-title-three").html($(this).attr('id') + ' — Power Estimate<button id="info-button-power" data-toggle="tooltip" data-placement="right" title="Basic Information!"><span class="glyphicon glyphicon-question-sign"></span></button>');
+    $("#tool-bar-header-title-three").html($(this).attr('id') + ' — Power Estimate<button id="info-button-power" data-toggle="tooltip" data-placement="right" data-original-title="Basic Information!"><span class="glyphicon glyphicon-question-sign"></span></button>');
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
