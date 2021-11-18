@@ -311,4 +311,5 @@ strong {
   cursor: pointer;
   top: 11px;
   font-size: 16px;
+  z-index: 2
 }
