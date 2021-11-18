@@ -102,11 +102,10 @@ $(document).ready(function(){
     $("#wind-grid").show();
     $("#county-map-wrap").hide();
     $("#basic-grid").hide();
-    $('#wind-grid .square-button .' + focusedSquare).focus();
+    $('#wind-grid .square-button.' + focusedSquare).focus();
   });
   $("#bathymetry-button").click(function() {
     $("#basic-map").hide();
-    $('#basic-grid .square-button .' + focusedSquare).focus();
     $("#bathymetry-map").show();
     $("#marine-conservation-map").hide();
     $("#basic-button").removeClass("active");
@@ -116,7 +115,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
-    $('#basic-grid .square-button .' + focusedSquare).focus();
+    $('#basic-grid .square-button.' + focusedSquare).focus();
   });
   $("#marine-conservation-button").click(function() {
     $("#basic-map").hide();
@@ -129,7 +128,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
-     $('#basic-grid .square-button .' + focusedSquare).focus();
+     $('#basic-grid .square-button.' + focusedSquare).focus();
   });
   $("#county-button").click(function() {
     $("#basic-map").hide();
