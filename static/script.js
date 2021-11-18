@@ -78,11 +78,11 @@ $(document).ready(function(){
     $(this).removeAttr("fill");
     if(color < 127) {
       color *= 2;
-      $(this).attr("fill", "rgb(255, 0," + String(color) + ")");
+      $(this).attr("fill", "rgb(255, 160," + String(color) + ")");
     }
     else {
       color = 255 - color * 2;
-      $(this).attr("fill", "rgb(" + String(color) + ", 0, 255)");
+      $(this).attr("fill", "rgb(" + String(color) + ", 160, 255)");
     }
   });
   var velocityMin = 0;
