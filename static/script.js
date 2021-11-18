@@ -148,7 +148,7 @@ $(document).ready(function(){
   });
   $(".square-button").click(function() {
     $("#displayed-square").text("— " + $(this).attr('class'));
-    const str = this.attributes[7].value;
+    const str = $(this).attr('data-content');
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
     const indexTwo = [...str.matchAll(new RegExp('<br>', 'gi'))].map(a => a.index);
     velocityMin = str.substring(indexOne[2] + 4, indexTwo[2]);
