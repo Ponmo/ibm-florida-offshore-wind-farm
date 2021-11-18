@@ -101,6 +101,7 @@ $(document).ready(function(){
     $("#wind-grid").show();
     $("#county-map-wrap").hide();
     $("#basic-grid").hide();
+    $("#basic-grid-2").hide();
   });
   $("#bathymetry-button").click(function() {
     $("#basic-map").hide();
@@ -113,6 +114,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
+    $("#basic-grid-2").hide();
   });
   $("#marine-conservation-button").click(function() {
     $("#basic-map").hide();
@@ -125,6 +127,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
+    $("#basic-grid-2").hide();
   });
   $("#county-button").click(function() {
     $("#basic-map").hide();
@@ -136,7 +139,8 @@ $(document).ready(function(){
     $("#county-button").addClass("active");
     $("#wind-grid").hide();
     $("#county-map-wrap").show();
-    $("#basic-grid").show();
+    $("#basic-grid").hide();
+    $("#basic-grid-2").show();
   });
   $("#remove-county").click(function() {
     $("#info-box").fadeOut(200);
