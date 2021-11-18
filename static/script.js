@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  //$('#addTagField').focus();
   var counties = {
   "Alachua": "<b>Energy Consumption 2020 (MWh):</b> 3,012,199<br><b>Energy Consumption Change 2025 (MWh):</b> 736,665<br><b>Population 2020:</b> 269,600<br><b>Estimated Population 2025:</b> 281,800",
   "Baker"  : "<b>Energy Consumption 2020 (MWh):</b> 327,034<br><b>Energy Consumption Change 2025 (MWh):</b> 227,790<br><b>Population 2020:</b> 28,500<br><b>Estimated Population 2025:</b> 29,900",
@@ -89,6 +88,7 @@ $(document).ready(function(){
   var velocityMin = 0;
   var velocityMed = 0;
   var velocityMax = 0;
+  var focusedSquare = "";
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
   $("#basic-button").click(function() {
@@ -102,9 +102,11 @@ $(document).ready(function(){
     $("#wind-grid").show();
     $("#county-map-wrap").hide();
     $("#basic-grid").hide();
+    $('#wind-grid .square-button .' + focusedSquare).focus();
   });
   $("#bathymetry-button").click(function() {
     $("#basic-map").hide();
+    $('#basic-grid .square-button .' + focusedSquare).focus();
     $("#bathymetry-map").show();
     $("#marine-conservation-map").hide();
     $("#basic-button").removeClass("active");
@@ -114,6 +116,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
+    $('#basic-grid .square-button .' + focusedSquare).focus();
   });
   $("#marine-conservation-button").click(function() {
     $("#basic-map").hide();
@@ -126,6 +129,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
+     $('#basic-grid .square-button .' + focusedSquare).focus();
   });
   $("#county-button").click(function() {
     $("#basic-map").hide();
@@ -148,6 +152,7 @@ $(document).ready(function(){
     $("#county-info").html("<b style='font-size: 15px; color: #4a0000;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
+    focusedSquare = $(this).attr('class').split(' ')[1];
     $("#displayed-square").text("— " + $(this).attr('class').split(' ')[1]);
     const str = $(this).attr('data-content');
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
