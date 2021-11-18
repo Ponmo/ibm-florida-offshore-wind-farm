@@ -139,7 +139,7 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("#remove-county").click(function() {
-    $("info-box").hide();
+    $("#info-box").hide();
   });
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
