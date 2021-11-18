@@ -28,19 +28,19 @@
         </div> 
         <div id="tool-bar-limits"> 
           <ul class="nav nav-pills nav-stacked">
-            <li class="active pointer" id="basic-button"><a>Wind Speed<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Basic Information!"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
-            <li class="pointer" id="bathymetry-button"><a>Bathymetry<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Depth Information!"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
-            <li class="pointer" id="marine-conservation-button"><a>Marine Conservation<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Marine Conservation Information!"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
-            <li class="pointer" id="county-button"><a>Energy Consumption<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="County Information!"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
+            <li class="active pointer" id="basic-button"><a>Wind Speed<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Welcome! <br> Red is high wind, yellow is low wind speed. The grids are approx. 55 km by 55km"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
+            <li class="pointer" id="bathymetry-button"><a>Bathymetry<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Depth information! First line is 50m, second line is 100m, third line is 1000m. Wind turbines with fixed foundations can be put in water depths of less than 50 meters. Floating foundations can be put up to depths of 150m or more!"><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
+            <li class="pointer" id="marine-conservation-button"><a>Marine Conservation<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Marine Conservation Information! Purple is barred off, light purple is planned."><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
+            <li class="pointer" id="county-button"><a>Energy Consumption<button class="info-buttons" data-toggle="tooltip" data-placement="right" title="Select a county to view its expected energy need in consumption for the future. blue is higher expansion, red is less."><span class="glyphicon glyphicon-info-sign"></span></button></a></li>
           </ul>
         </div> 
         <div class="tool-bar-header" id="turbine-header"> <!--css grey steel stripes popout like the forums --> 
-          <h6 id="tool-bar-header-title-two">Turbine Model<button id="info-button-turbine" data-toggle="tooltip" data-placement="right" title="Basic Information!"><span class="glyphicon glyphicon-question-sign"></span></button></h6>
+          <h6 id="tool-bar-header-title-two">Turbine Model<button id="info-button-turbine" data-toggle="tooltip" data-placement="right" title="Used to calculate the power capacity of a turbine placed in a grid. Velocity of the wind speed is the most important factor, which is dependent on where the turbine is placed and the hub height of the model. Air density (p) is at the default sea level level. The power coefficient is used to determine the mechanical efficieny of the model (how much energy it can actually capture from the wind). The Betz limit (highest theoretical value) is 0.59, and practically it is around 0.4-0.5. Hub heights for offshore wind turbines have reached over 200m but the average is nearer to 150m. The average radius of an offshore wind turbine is 85 meters. X contant is 1/1000 to convert to kilowatts."><span class="glyphicon glyphicon-question-sign"></span></button></h6>
         </div> 
         <img src="/static/images/turbine.png" alt="Turbine" id="tool-bar-turbine">
         <div class="form-group" id="radius">
           <label for="radius">Radius (m):</label>
-          <input type="number" class="form-control" id="radius-selection" min="0" step="0.1" height="30" placeholder="75">
+          <input type="number" class="form-control" id="radius-selection" min="0" step="0.1" height="30" placeholder="85">
         </div>
         <div class="form-group" id="hub-height">
           <label for="hub-height">Hub height (m):</label>
@@ -56,11 +56,11 @@
         </div>
         <div class="form-group" id="power-coefficient">
           <label for="power-coefficient">Power coefficient:</label>
-          <input type="number" class="form-control" id="power-coefficient-selection" min="0" max="0.59" step="0.01" height="30" placeholder="0.25">
+          <input type="number" class="form-control" id="power-coefficient-selection" min="0" max="0.59" step="0.01" height="30" placeholder="0.45">
         </div>
-        <p id="equation"><b>Power (kW) = v³ * r² * π/2 * ρ * Cp</b></p>
+        <p id="equation"><b>Power (kW) = v³ * r² * π/2 * ρ * Cp * x</b></p>
         <div class="tool-bar-header" id="power-header"> <!--css grey steel stripes popout like the forums --> 
-          <h6 id="tool-bar-header-title-three">Power Estimate <span id="displayed-square"></span><button id="info-button-power" data-toggle="tooltip" data-placement="right" title="Basic Information!"><span class="glyphicon glyphicon-question-sign"></span></button></h6>
+          <h6 id="tool-bar-header-title-three">Power Estimate <span id="displayed-square"></span><button id="info-button-power" data-toggle="tooltip" data-placement="right" title="The capacity factor is the average power generated, divided by the rated peak power, usually a value of 0.35, but growing quickly according to the IEA for offshore turbines. The hours is how many hours out of a year (8760 hrs) that it is active, taking into account downtime due to hazards, low wind (cut-in speed), or high wind (cut-out speed), more information is needed to be gathered to know these values. 65-90% of the time it is on. Am offshore wind farm usually has between 50-200 turbines operating."><span class="glyphicon glyphicon-question-sign"></span></button></h6>
         </div>
         <img src="/static/images/convert.png" alt="convert" id="conversion-image">
         <p id="power-select-info">Select a square to view power calculation</p>
@@ -78,7 +78,7 @@
         </div>
         <div class="form-group" id="number-hours">
           <label for="number-hours">Time (hrs):</label>
-          <input type="number" class="form-control input-sm" id="number-hours-selection" min="0" max="8760" step="1" height="30" placeholder="4800">
+          <input type="number" class="form-control input-sm" id="number-hours-selection" min="0" max="8760" step="1" height="30" placeholder="6400">
         </div>
       </div>
       <img src="/static/images/FloridaMap.svg" alt="Florida Map" class="florida-map" id="basic-map">
