@@ -328,3 +328,6 @@ strong {
   top: 100px;
   background-color: #8ab4f7;
 }
+.tooltip-inner {
+    max-width: 100px !important;
+}
