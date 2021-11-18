@@ -144,7 +144,7 @@ $(document).ready(function(){
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
     $("#info-box").fadeIn(200);
-    $("#county-info").html("<b style='font-size: 15px; color: #6e0000;'>" + name + " County</b><br>" + counties[name]);
+    $("#county-info").html("<b style='font-size: 15px; color: #660000;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
     $("#displayed-square").text("— " + $(this).attr('id'));
