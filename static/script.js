@@ -139,11 +139,11 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("#remove-county").click(function() {
-    $("#info-box").fadeOut();
+    $("#info-box").fadeOut(200);
   });
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
-    $("#info-box").fadeIn();
+    $("#info-box").fadeIn(200);
     $("#county-info").html("<b style='font-size: 15px;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
@@ -155,15 +155,15 @@ $(document).ready(function(){
     velocityMed = str.substring(indexOne[1] + 4, indexTwo[1]);
     velocityMax = str.substring(indexOne[0] + 4, indexTwo[0]);
     evaluateData();
-    $("#power-output").show();
-    $("#per-turbine-info").show();
-    $("#annual-yield").show();
-    $("#annual-info").show();
-    $("#conversion-image").show();
-    $("#number-turbines").show();
-    $("#capacity-factor").show();
-    $("#number-hours").show();
-    $("#number-turbines-label").show();
+    $("#power-output").fadeIn(200);
+    $("#per-turbine-info").fadeIn(200);
+    $("#annual-yield").fadeIn(200);
+    $("#annual-info").fadeIn(200);
+    $("#conversion-image").fadeIn(200);
+    $("#number-turbines").fadeIn(200);
+    $("#capacity-factor").fadeIn(200);
+    $("#number-hours").fadeIn(200);
+    $("#number-turbines-label").fadeIn(200);
     $("#power-select-info").hide();
   });
   $('#radius-selection').on('input', function() {
