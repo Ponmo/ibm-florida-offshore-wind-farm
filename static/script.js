@@ -220,7 +220,7 @@ $(document).ready(function(){
     }
     var time = parseFloat(document.getElementById('number-hours-selection').value);
     if(isNaN(time)) {
-      time = 4800;
+      time = 6400;
     }
     var number = parseFloat(document.getElementById('number-turbines-selection').value);
     if(isNaN(number)) {
