@@ -139,16 +139,14 @@ $(document).ready(function(){
     $("#basic-grid").hide();
   });
   $("#remove-county").click(function() {
-    $("#info-box").hide();
+    $("#info-box").fadeOut();
   });
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
-    $("#info-box").show();
+    $("#info-box").fadeIn();
     $("#county-info").html("<b style='font-size: 15px;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
-    //$("#tool-bar-header-title-three").html($(this).attr('id') + $("#tool-bar-header-title-three").html().slice(2));
-    //$('[data-toggle="tooltip"]').tooltip();
     $("#displayed-square").text("— " + $(this).attr('id'));
     const str = this.attributes[7].value;
     const indexOne = [...str.matchAll(new RegExp('</b>', 'gi'))].map(a => a.index);
@@ -228,9 +226,9 @@ $(document).ready(function(){
     if(isNaN(number)) {
       number = 1;
     }
-    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.001)) / 100;
-    $("#power-output").text(power.toString() + " kW");
+    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient)) / 100;
+    $("#power-output").text(power.toString() + " MW");
     const powerTime = Math.round(100 * (power * capacityFactor * time * number)) / 100;
-    $("#annual-yield").text(powerTime.toString() + " kWh");
+    $("#annual-yield").text(powerTime.toString() + " MWh");
   }
 });
