@@ -136,7 +136,7 @@ $(document).ready(function(){
     $("#county-button").addClass("active");
     $("#wind-grid").hide();
     $("#county-map-wrap").show();
-    $("#basic-grid").hide();
+    $("#basic-grid").show();
   });
   $("#remove-county").click(function() {
     $("#info-box").fadeOut(200);
