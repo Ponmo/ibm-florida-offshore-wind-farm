@@ -204,7 +204,7 @@ $(document).ready(function(){
     }
     var radius = parseFloat(document.getElementById('radius-selection').value);
     if(isNaN(radius)) {
-      radius = 85.0;
+      radius = 75.0;
     }
     var airDensity = parseFloat(document.getElementById('air-density-selection').value);
     if(isNaN(airDensity)) {
