@@ -313,3 +313,18 @@ strong {
   font-size: 16px;
   z-index: 2
 }
+#county-map-bg {
+  position: absolute;
+  min-width: 1200px;
+  z-index: -2;
+  width: -webkit-calc(100vw - 315px);
+  width:    -moz-calc(100vw - 315px);
+  width:         calc(100vw - 315px);
+  min-height: 750px;
+  height: -webkit-calc((100vw - 315px)/1.6);
+  height:    -moz-calc((100vw - 315px)/1.6);
+  height:         calc((100vw - 315px)/1.6);
+  left: 300px;
+  top: 100px;
+  background-color: #8ab4f7;
+}
