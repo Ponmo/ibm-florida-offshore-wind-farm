@@ -226,7 +226,7 @@ $(document).ready(function(){
     if(isNaN(number)) {
       number = 1;
     }
-    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient)) / 100;
+    const power = Math.round(100 * (Math.PI / 2 * radius * radius * velocity * velocity * velocity * airDensity * powerCoefficient * 0.000001)) / 100;
     $("#power-output").text(power.toString() + " MW");
     const powerTime = Math.round(100 * (power * capacityFactor * time * number)) / 100;
     $("#annual-yield").text(powerTime.toString() + " MWh");
