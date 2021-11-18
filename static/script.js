@@ -144,6 +144,7 @@ $(document).ready(function(){
   });
   $("path").click(function() {
     const name = $(this).attr('id').replaceAll('-', ' ');
+    $("#info-box").show();
     $("#county-info").html("<b style='font-size: 15px;'>" + name + " County</b><br>" + counties[name]);
   });
   $(".square-button").click(function() {
