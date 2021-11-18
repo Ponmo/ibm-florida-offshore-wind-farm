@@ -128,7 +128,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").hide();
     $("#basic-grid").show();
-     $('#basic-grid .square-button.' + focusedSquare).focus();
+    $('#basic-grid .square-button.' + focusedSquare).focus();
   });
   $("#county-button").click(function() {
     $("#basic-map").hide();
@@ -141,6 +141,7 @@ $(document).ready(function(){
     $("#wind-grid").hide();
     $("#county-map-wrap").show();
     $("#basic-grid").show();
+    $('#basic-grid .square-button.' + focusedSquare).focus();
   });
   $("#remove-county").click(function() {
     $("#info-box").fadeOut(200);
