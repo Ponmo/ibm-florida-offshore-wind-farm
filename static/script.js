@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //$('#addTagField').focus();
   var counties = {
   "Alachua": "<b>Energy Consumption 2020 (MWh):</b> 3,012,199<br><b>Energy Consumption Change 2025 (MWh):</b> 736,665<br><b>Population 2020:</b> 269,600<br><b>Estimated Population 2025:</b> 281,800",
   "Baker"  : "<b>Energy Consumption 2020 (MWh):</b> 327,034<br><b>Energy Consumption Change 2025 (MWh):</b> 227,790<br><b>Population 2020:</b> 28,500<br><b>Estimated Population 2025:</b> 29,900",
