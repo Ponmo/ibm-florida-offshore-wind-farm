@@ -307,6 +307,7 @@ strong {
 #remove-county {
   position: absolute;
   right: 10px;
+  cursor: pointer;
   top: 10px;
   font-size: 17px;
 
