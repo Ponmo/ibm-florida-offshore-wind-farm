@@ -277,6 +277,7 @@ strong {
 #county-map-wrap {
   position: absolute;
   min-width: 1200px;
+  z-index: 1;
   width: -webkit-calc(100vw - 315px);
   width:    -moz-calc(100vw - 315px);
   width:         calc(100vw - 315px);
@@ -297,8 +298,6 @@ strong {
   position: absolute;
   top: 609px;
   left: 300px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   background-color: white;
   border-top: 1px solid black;
   border-right: 1px solid black;
@@ -313,4 +312,3 @@ strong {
   top: 11px;
   font-size: 16px;
 }
-
