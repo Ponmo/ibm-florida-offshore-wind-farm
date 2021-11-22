@@ -91,6 +91,12 @@ $(document).ready(function(){
   var focusedSquare = "";
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
+  $("td").click(function() {
+    focusedSquare = "";
+  });
+  $("#heading-bar").click(function() {
+    focusedSquare = "";
+  });
   $("#basic-button").click(function() {
     $("#basic-map").show();
     $("#bathymetry-map").hide();
