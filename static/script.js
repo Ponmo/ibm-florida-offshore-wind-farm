@@ -91,7 +91,7 @@ $(document).ready(function(){
   var focusedSquare = "";
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
-  $("td").click(function() {
+  $(".florida-map").click(function() {
     focusedSquare = "";
   });
   $("#heading-bar").click(function() {
