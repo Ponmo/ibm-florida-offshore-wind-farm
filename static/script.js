@@ -91,8 +91,10 @@ $(document).ready(function(){
   var focusedSquare = "";
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
-  $(".florida-map").click(function() {
-    focusedSquare = "";
+  $("td").click(function() {
+    if ($(this).children().length > 0) {
+      focusedSquare = "";
+    }
   });
   $("#heading-bar").click(function() {
     focusedSquare = "";
