@@ -92,9 +92,9 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
   $("td").click(function() {
-    if (!$(this).is(':parent')) {
-    focusedSquare = "";
-   }
+    if ($(this).children().length == 0) {
+      focusedSquare = "";
+    }
   });
   $("#heading-bar").click(function() {
     focusedSquare = "";
