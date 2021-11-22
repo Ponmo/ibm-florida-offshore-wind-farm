@@ -91,11 +91,11 @@ $(document).ready(function(){
   var focusedSquare = "";
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
- // $("td").click(function() {
-  //  if ($(this).is(':parent')) {
- //   focusedSquare = "";
- //  }
- // });
+  $("td").click(function() {
+    if (!$(this).is(':parent')) {
+    focusedSquare = "";
+   }
+  });
   $("#heading-bar").click(function() {
     focusedSquare = "";
   });
